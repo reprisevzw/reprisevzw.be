@@ -15,7 +15,8 @@
 
 .header--dark {
   @extend .text--dark;
-  background: rgba(#000, .15);
+  //background: rgba(#000, .15);
+  background: rgba(#000, 0.0); // fully transparent
   .navigation__item--active {
     &::after {
       @include split-line(bottom, 4px, $text-color-theme-dark);
@@ -64,8 +65,10 @@
   @include flexbox();
   @include align-items(center);
   & > svg {
-    width: map-get($base, font-size-h4) * 1.6;
-    height: map-get($base, font-size-h4) * 1.6;
+    position: absolute;
+    top: 0px;
+    width: map-get($base, font-size-h4) * 6;
+    height: map-get($base, font-size-h4) * 6;
     margin-right: map-get($spacers, 3);
     vertical-align: middle;
     @include media-breakpoint-down(md) {
