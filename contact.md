@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Over ons
+title: Contact
 #mode: immersive
 #header:
 #  theme: dark
@@ -16,4 +16,6 @@ article_header:
     src: /assets/images/reprise/header_reducedheight.webp
 ---
 
-Reprise vzw is een nieuwe Hasseltse vzw, die ernaar streeft om meer theater naar Hasselt te brengen.
+info@reprisevzw.be
+
+Contactformulier: todo

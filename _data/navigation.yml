@@ -5,8 +5,8 @@ header:
   - title: Voorstellingen
     url: /voorstellingen.html
 
-  - title: Nieuws
-    url: /nieuws.html
-
   - title: Over ons
     url: /over-ons.html
+
+  - title: Contact
+    url: /contact.html
