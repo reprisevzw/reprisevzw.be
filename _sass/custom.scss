@@ -2,7 +2,7 @@
 
 .page__main {
   #logo {
-    content: url("assets/images/logo/reprise_hor_color_large_50pct.svg");
+    content: url($baseurl + "/assets/images/logo/reprise_hor_color_large_50pct.svg");
     height: 5rem;
   }
 }
@@ -23,7 +23,7 @@
   }
 
   #logo {
-    content: url("assets/images/logo/logo_50pct.svg");
+    content: url($baseurl + "/assets/images/logo/logo_50pct.svg");
     height: 8rem;
   }
 }
