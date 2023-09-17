@@ -200,6 +200,11 @@ exclude:
   - /screenshots
   - /test
   - /vendor
+  - /.idea
+
+collections:
+  voorstellingen:
+    output: true
 
 defaults:
   - scope:
@@ -218,8 +223,9 @@ defaults:
       path: ""
       type: voorstellingen
     values:
+      layout: article
       nav_key: voorstellingen
-
+      show_date: false
 
 
 ## => Plugins

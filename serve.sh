@@ -1,2 +1,2 @@
 #!/bin/bash
-bundle exec jekyll serve
+bundle-2.7 exec jekyll serve
