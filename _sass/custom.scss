@@ -1,6 +1,20 @@
 /* start custom scss snippet */
 
 .page__main {
+  .header__title {
+    height: auto; // reset height, to fit the square logo
+    @include media-breakpoint-down(md) {
+      height: auto; // reset height, to fit the square logo
+    }
+  }
+
+  .header__brand {
+    height: auto; // reset height, to fit the square logo
+    @include media-breakpoint-down(md) {
+      height: auto; // reset height, to fit the square logo
+    }
+  }
+
   #logo {
     content: url($baseurl + "/assets/images/logo/reprise_hor_color_large_50pct.svg");
     height: 5rem;
