@@ -8,7 +8,7 @@ aside:
   toc: true
 ---
 
-![de-padelburen-header](/assets/images/voorstellingen/de-padelburen-visual-lv.webp){:class="img-responsive"}
+![de-padelburen-header]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen-visual-lv.webp){:class="img-responsive"}
 
 ## 8 April 2023, CCHA Hasselt
 

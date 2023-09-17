@@ -6,7 +6,7 @@ key: page-single
 cover: /assets/images/voorstellingen/de-muizenval-square.webp
 ---
 
-![de-muizenval-header](/assets/images/voorstellingen/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
+![de-muizenval-header]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
 
 ## 11 December 2023, CCHA Hasselt
 
