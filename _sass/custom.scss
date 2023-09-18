@@ -48,4 +48,34 @@
   object-fit: cover;
 }
 
+/* fix for card image height, when wrapped in a href link */
+.card__image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  //height: 25rem;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 150%;
+
+  & > a {
+    display: block;
+    width: 100%;
+
+    //padding-bottom: 100%;
+    height: auto;
+    border-radius: inherit;
+  }
+
+  & > a > img {
+    position: absolute;
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+  }
+}
+
 /* end custom scss snippet */
