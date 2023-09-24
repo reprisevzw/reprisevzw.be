@@ -4,8 +4,6 @@ title: De Padelburen
 permalink: /voorstellingen/de-padelburen.html
 key: page-single
 cover: /assets/images/voorstellingen/de-padelburen-visual-lv.webp
-aside:
-  toc: true
 ---
 
 ![de-padelburen-header]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen-visual-lv.webp){:class="img-responsive"}

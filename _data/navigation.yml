@@ -1,9 +1,6 @@
 header:
-  - title: Home
-    url: /
-
   - title: Voorstellingen
-    url: /voorstellingen.html
+    url: /
 
   - title: Over ons
     url: /over-ons.html

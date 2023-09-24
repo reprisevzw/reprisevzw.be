@@ -1,6 +1,6 @@
 ---
-layout: home
-title: Reprise vzw brengt theater voorstellingen naar Hasselt!
+layout: articles
+title: Reprise vzw brengt dit seizoen twee theater voorstellingen naar Hasselt!
 mode: immersive
 header:
   theme: dark
@@ -12,6 +12,9 @@ article_header:
     color: '#333333'
     gradient: 'linear-gradient(135deg, rgba(0, 0, 0 , .4), rgba(0, 0, 0, .4))'
     src: /assets/images/reprise/header.webp
+articles:
+  data_source: site.voorstellingen
+  type: grid
 ---
 
 ## Nieuwe voorstellingen
