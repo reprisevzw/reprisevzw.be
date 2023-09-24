@@ -16,7 +16,9 @@ article_header:
     src: /assets/images/reprise/header_reducedheight.webp
 ---
 
-<a href="mailto:{{ site.email | encode_email }}" title="Mail ons">Stuur ons een email</a>
+{%- assign _author = site.author -%}
+
+<a href="mailto:{{ _author.email | encode_email }}" title="Mail ons">Stuur ons een email</a>
 of gebruik het onderstaande formulier:
 
 <div class="grid cell cell--auto" style="border:1px solid #333">
