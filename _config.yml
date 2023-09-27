@@ -202,10 +202,6 @@ exclude:
   - /vendor
   - /.idea
 
-collections:
-  voorstellingen:
-    output: true
-
 defaults:
   - scope:
       path: ""
@@ -215,10 +211,13 @@ defaults:
       sharing: true
       license: false
       aside:
-        toc: true
+        toc: false
       show_edit_on_github: false
       show_subscribe: false
       pageview: true
+      show_excerpt: true
+      show_date: false
+      show_cover: false
   - scope:
       path: ""
       type: voorstellingen
@@ -226,6 +225,14 @@ defaults:
       layout: article
       nav_key: voorstellingen
       show_date: false
+      show_excerpt: true
+      show_cover: true
+  - scope:
+      path: ""
+      type: articles
+    values:
+      show_excerpt: true
+
 
 
 ## => Plugins

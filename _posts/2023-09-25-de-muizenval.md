@@ -1,19 +1,19 @@
 ---
 layout: article
 title: De Muizenval
-permalink: /voorstellingen/de-muizenval.html
+permalink: /voorstellingen/de-muizenval
 key: page-single
 cover: /assets/images/voorstellingen/de-muizenval-square.webp
-excerpt_separator: <!--more-->
+toc: false
 ---
-
-![de-muizenval-header]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
 
 ## 11 December 2023, CCHA Hasselt
 
-Laat je meeslepen in het bloedstollende moordverhaal van Agatha Christie.
-
 <!--more-->
+
+![de-muizenval-header]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
+
+Laat je meeslepen in het bloedstollende moordverhaal van Agatha Christie.
 
 
 De Muizenval speelt zich af in het pension Monkswell Manor. Een aantal gasten is door de sneeuw opgesloten in het hotel van een jong echtpaar. In de omgeving van het hotel heeft eerder die dag een moord plaatsgevonden. Een brigadier van politie bezoekt vervolgens het hotel omdat hij vermoedt dat de moordenaar (of moordenares) zich in het hotel schuilhoudt.
