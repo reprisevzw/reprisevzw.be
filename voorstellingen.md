@@ -6,7 +6,7 @@ article_header:
   image:
   #    color: '#333333'
   #    gradient: 'linear-gradient(135deg, rgba(0, 0, 0 , .4), rgba(0, 0, 0, .4))'
-    src: /assets/images/reprise/header_reducedheight.webp
+    src: /assets/images/reprise/header_reducedheight_3.webp
 articles:
   data_source: site.voorstellingen
   type: grid

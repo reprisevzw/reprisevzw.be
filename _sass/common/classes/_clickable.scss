@@ -103,6 +103,9 @@
   }
   @include hover() {
     color: $hover-clr;
+
+    mix-blend-mode: difference;
+
     @if $hover-bg-clr {
       background-color: $hover-bg-clr;
     }
