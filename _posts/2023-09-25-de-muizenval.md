@@ -3,7 +3,7 @@ layout: article
 title: De Muizenval
 permalink: /voorstellingen/de-muizenval
 key: page-single
-cover: /assets/images/voorstellingen/de-muizenval-square.webp
+cover: /assets/images/voorstellingen/de-muizenval/de-muizenval-poster-xs.webp
 toc: false
 ---
 
