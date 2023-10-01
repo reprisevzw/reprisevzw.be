@@ -1,19 +1,19 @@
 ---
 layout: article
 title: De Muizenval
-permalink: /voorstellingen/de-muizenval.html
+permalink: /voorstellingen/de-muizenval
 key: page-single
-cover: /assets/images/voorstellingen/de-muizenval-square.webp
-excerpt_separator: <!--more-->
+cover: /assets/images/voorstellingen/de-muizenval/de-muizenval-poster-xs.webp
+toc: false
 ---
-
-![de-muizenval-header]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
 
 ## 11 December 2023, CCHA Hasselt
 
-Laat je meeslepen in het bloedstollende moordverhaal van Agatha Christie.
-
 <!--more-->
+
+![de-muizenval-header]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
+
+Laat je meeslepen in het bloedstollende moordverhaal van Agatha Christie.
 
 
 De Muizenval speelt zich af in het pension Monkswell Manor. Een aantal gasten is door de sneeuw opgesloten in het hotel van een jong echtpaar. In de omgeving van het hotel heeft eerder die dag een moord plaatsgevonden. Een brigadier van politie bezoekt vervolgens het hotel omdat hij vermoedt dat de moordenaar (of moordenares) zich in het hotel schuilhoudt.
@@ -23,3 +23,13 @@ De spanning loopt vervolgens nog verder op als er een tweede slachtoffer valt. H
 Meer over het verhaal kunnen we nog niet vertellen, dat zou de verrassing bederven en de traditie verbreken dat niemand die de show heeft gezien, vertelt wie de moordenaar is – wat inhoud dat er maar één manier is om er achter te komen…
 
 …komen kijken!
+
+MET:
+* Timo Descamps
+* Karin Jacobs
+* Rikkert Van Dijck
+* Nathalie Wijnants
+* Elias Bosmans
+* Marijke Hofkens
+* Marc Stroobants
+* Jérémie Vrielynck
