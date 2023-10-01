@@ -23,3 +23,13 @@ De spanning loopt vervolgens nog verder op als er een tweede slachtoffer valt. H
 Meer over het verhaal kunnen we nog niet vertellen, dat zou de verrassing bederven en de traditie verbreken dat niemand die de show heeft gezien, vertelt wie de moordenaar is – wat inhoud dat er maar één manier is om er achter te komen…
 
 …komen kijken!
+
+MET:
+* Timo Descamps
+* Karin Jacobs
+* Rikkert Van Dijck
+* Nathalie Wijnants
+* Elias Bosmans
+* Marijke Hofkens
+* Marc Stroobants
+* Jérémie Vrielynck

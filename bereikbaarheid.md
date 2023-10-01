@@ -11,11 +11,10 @@ article_header:
 
 GPS-coördinaten: latitude: 50.92679 - longitude: 5.34725
 
-
-[Parkeermogelijkheiden](https://www.ccha.be/pQ4WuY/parking)
-
 **OPGELET**
-Vanaf maandag 06 maart maakt de parking voor CCHA plaats voor de uitbreiding van het Stadspark. Parkeren is vanaf dan niet meer mogelijk.
+Vanaf maandag 06 maart maakt de parking voor CCHA plaats voor de uitbreiding van het Stadspark. De parkeerplaats van het CC is vanaf dan niet meer toegankelijk.
+
+Bekijk hier de [verschillende parkeermogelijkheiden](https://www.ccha.be/pQ4WuY/parking)
 
 {% raw %}
 <div id="map"></div>
