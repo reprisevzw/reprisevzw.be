@@ -24,3 +24,4 @@ Zorg dat u erbij bent! **[Bestel vandaag nog je tickets!](/tickets)**
 Tot binnenkort!
 
 Dorien, Gunter en Maxime
+![Dorien, Gunter en Maxime]({{ site.baseurl }}/assets/images/reprise/groepsfoto_small.webp){:class="img-responsive"}
