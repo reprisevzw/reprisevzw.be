@@ -1,25 +1,20 @@
 ---
 layout: article
 title: Contact
-#mode: immersive
-#header:
-#  theme: dark
-#  background: '#333'
+permalink: /contact
 article_header:
   type: cover
-#  type: overlay
-#  theme: dark
-#  background_color: '#333333'
   image:
-#    color: '#333333'
-#    gradient: 'linear-gradient(135deg, rgba(0, 0, 0 , .4), rgba(0, 0, 0, .4))'
     src: /assets/images/reprise/header_reducedheight_3.webp
 ---
 
+<p>
+Heb je vragen? Dan kan je ons het best contacteren&nbsp;
 {%- assign _author = site.author -%}
-
-<a href="mailto:{{ _author.email | encode_email }}" title="Mail ons">Stuur ons een email</a>
+<a href="mailto:{{ _author.email | encode_email }}" title="Mail ons">via email</a>
 of gebruik het onderstaande formulier:
+</p>
+
 
 <div class="grid cell cell--auto" style="border:1px solid #333">
 <div class="m-3" style="width: 100%">

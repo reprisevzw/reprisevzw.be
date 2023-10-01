@@ -1,6 +1,7 @@
 ---
 layout: articles
 title: Voorstellingen
+permalink: /voorstellingen
 article_header:
   type: cover
   image:

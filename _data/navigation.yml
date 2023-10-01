@@ -2,8 +2,14 @@ header:
   - title: Voorstellingen
     url: /
 
+  - title: Tickets
+    url: /tickets
+
+  - title: Bereikbaarheid
+    url: /bereikbaarheid
+
   - title: Over ons
-    url: /over-ons.html
+    url: /over-ons
 
   - title: Contact
-    url: /contact.html
+    url: /contact

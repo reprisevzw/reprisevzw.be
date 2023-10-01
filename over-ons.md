@@ -1,18 +1,10 @@
 ---
 layout: article
 title: Over ons
-#mode: immersive
-#header:
-#  theme: dark
-#  background: '#333'
+permalink: /over-ons
 article_header:
   type: cover
-#  type: overlay
-#  theme: dark
-#  background_color: '#333333'
   image:
-#    color: '#333333'
-#    gradient: 'linear-gradient(135deg, rgba(0, 0, 0 , .4), rgba(0, 0, 0, .4))'
     src: /assets/images/reprise/header_reducedheight_3.webp
 ---
 
@@ -28,3 +20,7 @@ In ons eerste seizoen pakken we onmiddellijk uit met twee kleppers van formaat!
   Bovendien kunnen beide stukken rekenen op een ijzersterke cast. U ziet uw favoriete tv-acteurs live aan het werk.
 
 Zorg dat u erbij bent! Bestel vandaag nog je tickets!
+
+Tot binnenkort!
+
+Dorien, Gunter en Maxime
