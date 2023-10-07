@@ -13,6 +13,8 @@ toc: false
 
 ![de-muizenval-header]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
 
+[Koop hier uw tickets!](https://tickets.roodfluweel.be/reprise/Show/SeatSelection/d3dbdd2c-7dda-4ac3-ab40-dc3960cd4642)
+
 Laat je meeslepen in het bloedstollende moordverhaal van Agatha Christie.
 
 
