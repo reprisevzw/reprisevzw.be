@@ -27,11 +27,11 @@ Meer over het verhaal kunnen we nog niet vertellen, dat zou de verrassing bederv
 …komen kijken!
 
 MET:
-* Timo Descamps
-* Karin Jacobs
-* Rikkert Van Dijck
-* Nathalie Wijnants
-* Elias Bosmans
-* Marijke Hofkens
-* Marc Stroobants
-* Jérémie Vrielynck
+* Timo Descamps (Spring)
+* Karin Jacobs (Wittekerke, Flikken)
+* Rikkert Van Dijck (Thuis)
+* Nathalie Wijnants (Thuis)
+* Elias Bosmans (Thuis)
+* Marijke Hofkens (Thuis)
+* Marc Stroobants (Thuis)
+* Jérémie Vrielynck (The Voice)

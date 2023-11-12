@@ -3,7 +3,7 @@ layout: article
 title: De Padelburen
 permalink: /voorstellingen/de-padelburen
 key: page-single
-cover: /assets/images/voorstellingen/de-padelburen/de-padelburen-visual-lv.webp
+cover: /assets/images/voorstellingen/de-padelburen/de-padelburen-nieuw-lv.webp
 toc: false
 ---
 
@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-![de-padelburen-header]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-visual-lv.webp){:class="img-responsive"}
+![de-padelburen-header]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-nieuw-lv.webp){:class="img-responsive"}
 
 ### [Koop hier uw tickets!](https://tickets.roodfluweel.be/reprise/Show/SeatSelection/325331ab-e3b2-418a-8f83-edaf1d080da2)
 
@@ -22,8 +22,8 @@ Een actuele situatiekomedie met kleurrijke personages en hilarische toestanden. 
 ‘De Padelburen’ is geschreven door Jeroen Maes
 
 MET:
-* Peter Bulckaen
-* Tine Priem
-* Martine de Jager
-* Wim Stevens
+* Peter Bulckaen (Familie)
+* Katja Retsin (De Rode Loper)
+* Martine de Jager (Samson en Marie)
+* Wim Stevens (Thuis)
 * Jeroen Maes
