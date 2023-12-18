@@ -4,6 +4,8 @@ title: Bereikbaarheid
 permalink: /bereikbaarheid
 article_header:
   type: cover
+  image:
+    src: /assets/images/reprise/header_reducedheight_3.webp
 ---
 
 ## Met de auto
