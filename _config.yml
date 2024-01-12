@@ -233,7 +233,10 @@ defaults:
     values:
       show_excerpt: true
 
-
+collections:
+  archief:
+    output: true
+    permalink: /archief/:path/
 
 ## => Plugins
 ##############################
