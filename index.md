@@ -1,6 +1,6 @@
 ---
 layout: articles
-title: Reprise vzw brengt dit seizoen twee theatervoorstellingen naar Hasselt!
+title: Reprise vzw brengt theatervoorstellingen naar Hasselt!
 mode: immersive
 header:
   theme: dark
