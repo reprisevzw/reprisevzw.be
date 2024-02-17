@@ -11,15 +11,14 @@ articles:
   type: grid
 ---
 
-## Nieuwe voorstellingen voor seizoen 2023-2024
+## Nieuwe voorstellingen voor 2024-2025
 
-Twee voorstellingen voor ons allereerste seizoen (2023-2024):
-
-Eerstvolgende voorstelling:
+Eerstvolgende voorstellingen:
 - [De Padelburen](/voorstellingen/de-padelburen) op 8 april 2024, van Het Prethuis
+- [Hoog In De Lucht](/voorstellingen/hoog-in-de-lucht) op 1 oktober 2024, van Sven De Ridder Company
 
+## Reeds afgelopen
 Reeds afgelopen:
 - [De Muizenval](/voorstellingen/de-muizenval) op 11 december 2023, van Loge10 Theaterproducties
 
-## Seizoen 2024-2025
-We zijn volop bezig het volgende seizoen samen te stellen. Binnenkort meer nieuws!
+Bekijk ons [archief](/archief) voor een overzicht van alle voorstellingen die we reeds georganiseerd hebben.
