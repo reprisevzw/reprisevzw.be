@@ -3,7 +3,7 @@ layout: article
 title: Hoog In De Lucht
 permalink: /voorstellingen/hoog-in-de-lucht
 key: page-single
-cover: /assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-380.webp
+cover: /assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-800.webp
 toc: false
 ---
 
@@ -11,9 +11,9 @@ toc: false
 
 <!--more-->
 
-[![hoog-in-de-lucht-header]({{ site.baseurl }}/assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-1024.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-1024.webp)
+[![hoog-in-de-lucht-header]({{ site.baseurl }}/assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-800.webp)
 
-## [Koop hier uw tickets!](https://tickets.roodfluweel.be/en/reprise/Show/SeatSelection/5fdc05c1-1eb2-4324-a057-483162277b30)
+## [Koop hier uw tickets!](https://tickets.roodfluweel.be/reprise/Show/SeatSelection/5fdc05c1-1eb2-4324-a057-483162277b30)
 
 - Standaard tarief: €28,00
 - Groep: €27,00 (vanaf 10 personen)

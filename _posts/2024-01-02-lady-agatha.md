@@ -3,7 +3,7 @@ layout: article
 title: Lady Agatha
 permalink: /voorstellingen/lady-agatha
 key: page-single
-cover: /assets/images/voorstellingen/lady-agatha/lady-agatha-380.webp
+cover: /assets/images/voorstellingen/lady-agatha/lady-agatha-800.webp
 toc: false
 ---
 
@@ -11,9 +11,9 @@ toc: false
 
 <!--more-->
 
-[![hoog-in-de-lucht-header]({{ site.baseurl }}/assets/images/voorstellingen/lady-agatha/lady-agatha-1024.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/lady-agatha/lady-agatha-1024.webp)
+[![hoog-in-de-lucht-header]({{ site.baseurl }}/assets/images/voorstellingen/lady-agatha/lady-agatha-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/lady-agatha/lady-agatha-800.webp)
 
-## [Koop hier uw tickets!](https://tickets.roodfluweel.be/en/reprise/Show/SeatSelection/ef1a2505-29f6-4316-b01c-34dbf0c308cf)
+## [Koop hier uw tickets!](https://tickets.roodfluweel.be/reprise/Show/SeatSelection/ef1a2505-29f6-4316-b01c-34dbf0c308cf)
 
 - Standaard tarief: €24,00
 - Groep: €23,00 (vanaf 10 personen)

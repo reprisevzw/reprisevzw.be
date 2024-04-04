@@ -3,7 +3,7 @@ layout: article
 title: De Padelburen
 permalink: /voorstellingen/de-padelburen
 key: page-single
-cover: /assets/images/voorstellingen/de-padelburen/de-padelburen-nieuw-lv.webp
+cover: /assets/images/voorstellingen/de-padelburen/de-padelburen-800.webp
 toc: false
 ---
 
@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-![de-padelburen-header]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-nieuw-lv.webp){:class="img-responsive"}
+[![de-padelburen-header]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-800.webp)
 
 ### [Koop hier uw tickets!](https://tickets.roodfluweel.be/reprise/Show/SeatSelection/325331ab-e3b2-418a-8f83-edaf1d080da2)
 
