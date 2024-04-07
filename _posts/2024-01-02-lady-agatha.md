@@ -19,6 +19,8 @@ toc: false
 - Groep: €23,00 (vanaf 10 personen)
 - Groep: €22,00 (vanaf 20 personen)
 
+Opgelet: tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar.
+
 ### Woensdag 11 December 2024, CCHA Hasselt, 20:00
 
 Door: Loge10 Theaterproducties

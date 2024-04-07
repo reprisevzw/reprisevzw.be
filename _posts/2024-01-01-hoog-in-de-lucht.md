@@ -19,6 +19,8 @@ toc: false
 - Groep: €27,00 (vanaf 10 personen)
 - Groep: €26,00 (vanaf 20 personen)
 
+Opgelet: tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar.
+
 ### Dinsdag 1 Oktober 2024, CCHA Hasselt, 20:00
 Door: Sven De Ridder Company
 
