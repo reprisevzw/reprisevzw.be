@@ -14,9 +14,15 @@ article_header:
 GPS-coördinaten: latitude: 50.92679 - longitude: 5.34725
 
 **OPGELET**
-Vanaf maandag 06 maart maakt de parking voor CCHA plaats voor de uitbreiding van het Stadspark. De parkeerplaats van het CC is vanaf dan niet meer toegankelijk.
+Vanaf maandag 29 april verandert de werking van de parking aan CCHA.
+Slimme slagbomen met nummerplaatherkenning regelen vanaf dan de toegang.
+Zo kunnen er parkeerplaatsen voorbehouden worden voor evenementbezoekers, mits een voorafgaande reservatie aan 3 euro/avond.
+Hierdoor kan je genieten van extra parkeercomfort en vlotter een parkeerplaats vinden.
+Andere bezoekers betalen het geldend uurtarief, en parkeren enkel op de niet-voorbehouden plaatsen.
 
-Bekijk hier de [verschillende parkeermogelijkheiden](https://www.ccha.be/pQ4WuY/parking)
+We zijn momenteel bezig met de voorbereidingen van deze nieuwe werking en sturen je binnenkort meer informatie!
+
+Bekijk hier de [verschillende parkeermogelijkheiden](https://www.ccha.be/pQ7aiZ/praktisch/bereikbaarheid)
 
 {% raw %}
 <div id="map"></div>
