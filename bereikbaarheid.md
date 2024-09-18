@@ -20,7 +20,8 @@ Zo kunnen er parkeerplaatsen voorbehouden worden voor evenementbezoekers, mits e
 Hierdoor kan je genieten van extra parkeercomfort en vlotter een parkeerplaats vinden.
 Andere bezoekers betalen het geldend uurtarief, en parkeren enkel op de niet-voorbehouden plaatsen.
 
-We zijn momenteel bezig met de voorbereidingen van deze nieuwe werking en sturen je binnenkort meer informatie!
+**Na uw bestelling ontvangt u een email van parkinghasselt@amano.be met een link om uw parkeerplaats te reserveren, indien gewenst.**
+Deze emails worden wekelijks verstuurd, dus niet onmiddellijk na uw bestelling.
 
 Bekijk hier de [verschillende parkeermogelijkheiden](https://www.ccha.be/pQ7aiZ/praktisch/bereikbaarheid)
 
