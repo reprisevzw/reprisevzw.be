@@ -13,14 +13,15 @@ article_header:
 
 GPS-coördinaten: latitude: 50.92679 - longitude: 5.34725
 
-**OPGELET**
-Vanaf maandag 29 april verandert de werking van de parking aan CCHA.
-Slimme slagbomen met nummerplaatherkenning regelen vanaf dan de toegang.
-Zo kunnen er parkeerplaatsen voorbehouden worden voor evenementbezoekers, mits een voorafgaande reservatie aan 3 euro/avond.
-Hierdoor kan je genieten van extra parkeercomfort en vlotter een parkeerplaats vinden.
-Andere bezoekers betalen het geldend uurtarief, en parkeren enkel op de niet-voorbehouden plaatsen.
+**Parkeren aan CCHA**
 
-**Na uw bestelling ontvangt u een email van parkinghasselt@amano.be met een link om uw parkeerplaats te reserveren, indien gewenst.**
+De werking van de parking aan CCHA is sinds kort gewijzigd:
+Slimme slagbomen met nummerplaatherkenning regelen nu de toegang.
+
+- **Voor inwoners van Hasselt:** U kan gratis parkeren door gebruik te maken van het Hasselts Parkeerbudget. U hoeft niet op voorhand te reserveren. Meer info vindt u hier: [https://www.hasselt.be/nl/parkeerbudget](https://www.hasselt.be/nl/parkeerbudget).
+- **Voor niet-inwoners van Hasselt:** U kan een parkeerplaats reserveren aan 3 euro/avond. U krijgt hiervoor een link toegestuurd na uw bestelling. Indien u niet reserveert, betaalt u het geldend uurtarief van 2 euro/uur.
+
+**Na uw bestelling ontvangt u een email van [parkinghasselt@amano.be](mailto:parkinghasselt@amano.be) met een link om uw parkeerplaats te reserveren, indien gewenst.**
 Deze emails worden wekelijks verstuurd, dus niet onmiddellijk na uw bestelling.
 
 Bekijk hier de [verschillende parkeermogelijkheiden](https://www.ccha.be/pQ7aiZ/praktisch/bereikbaarheid)
