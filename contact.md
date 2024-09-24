@@ -18,7 +18,7 @@ of gebruik het onderstaande formulier:
 
 <div class="grid cell cell--auto" style="border:1px solid #333">
 <div class="m-3" style="width: 100%">
-<form action="https://getform.io/f/fb6a5741-d908-4c57-b773-ec7dee24b330" method="POST"  style="width: 100%">
+<form action="https://pts6vjw7e1.execute-api.eu-north-1.amazonaws.com/repriseContactForm" method="POST"  style="width: 100%">
   <div class="form-group mt-4 mb-4">
     <div>
       <label for="inputName">Volledige naam:</label>
