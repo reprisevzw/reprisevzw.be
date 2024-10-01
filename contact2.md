@@ -61,53 +61,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Submit the form
     const formData = new URLSearchParams(new FormData(form));
-    // First, send a preflight request
     fetch(form.action, {
-      method: 'OPTIONS',
+      method: 'POST',
+      body: formData,
       mode: 'cors',
       headers: {
-        'Access-Control-Request-Method': 'POST',
-        'Access-Control-Request-Headers': 'Content-Type'
+        // 'Access-Control-Request-Method': 'POST',
+        // 'Access-Control-Request-Headers': 'Content-Type',
+        'Content-Type': 'application/x-www-form-urlencoded'
       }
     })
-    .then(response => {
-      if (response.ok) {
-        // If preflight is successful, send the actual POST request
-        return fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          mode: 'cors',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          }
-        });
-      } else {
-        throw new Error('Preflight request failed');
-      }
-    })
-    .then(response => {
-      if (response.ok) {
-        return response.text();
-      } else {
-        throw new Error('Server responded with an error');
-      }
-    })
-    .then(html => {
-      // Replace the form with the response HTML
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = html;
-      form.parentNode.replaceChild(tempDiv.firstChild, form);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
-    })
-    .finally(() => {
-      // Re-enable the button and restore its text
-      submitButton.disabled = false;
-      submitButton.textContent = 'Verstuur!';
-      submitButton.style.opacity = '1';
-    });
+      .then(response => {
+        if (response.ok) {
+          return response.text();
+        } else {
+          throw new Error('Server responded with an error');
+        }
+      })
+      .then(html => {
+        // Replace the form with the response HTML
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+        form.parentNode.replaceChild(tempDiv.firstChild, form);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+      })
+      .finally(() => {
+        // Re-enable the button and restore its text
+        submitButton.disabled = false;
+        submitButton.textContent = 'Verstuur!';
+        submitButton.style.opacity = '1';
+      });
   });
 });
 </script>

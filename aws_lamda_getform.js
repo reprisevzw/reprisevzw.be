@@ -31,7 +31,7 @@ export const handler = async (event) => {
 
   // CORS headers
   const headers = {
-    "Access-Control-Allow-Origin": "*", // Allow all origins for testing. Replace with your domain in production.
+    "Access-Control-Allow-Origin": "https://reprisevzw.be", // Replace with your actual domain
     "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
     "Access-Control-Allow-Methods": "OPTIONS,POST"
   };
@@ -196,6 +196,6 @@ export const handler = async (event) => {
   return {
     statusCode: 405,
     headers: headers,
-    body: 'Method Not Allowed'
+    body: JSON.stringify({ message: 'Method Not Allowed' })
   };
 };
