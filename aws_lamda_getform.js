@@ -27,6 +27,8 @@ async function logSubmissionToDynamoDB(name, email, message) {
 }
 
 export const handler = async (event) => {
+  console.log("Received event:", JSON.stringify(event, null, 2));
+
   // CORS headers
   const headers = {
     "Access-Control-Allow-Origin": "*", // Allow all origins for testing. Replace with your domain in production.
@@ -34,8 +36,12 @@ export const handler = async (event) => {
     "Access-Control-Allow-Methods": "OPTIONS,POST"
   };
 
+  // Determine the HTTP method
+  const httpMethod = event.httpMethod || event.requestContext?.http?.method || 'POST';
+  console.log("Determined HTTP method:", httpMethod);
+
   // Handle preflight requests
-  if (event.httpMethod === 'OPTIONS') {
+  if (httpMethod === 'OPTIONS') {
     return {
       statusCode: 200,
       headers: headers,
@@ -43,7 +49,7 @@ export const handler = async (event) => {
     };
   }
 
-  if (event.httpMethod === 'POST') {
+  if (httpMethod === 'POST') {
     try {
       console.log("Incoming event:", event);
 
