@@ -61,12 +61,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Submit the form
     const formData = new URLSearchParams(new FormData(form));
+    // First, send a preflight request
     fetch(form.action, {
-      method: 'POST',
-      body: formData,
+      method: 'OPTIONS',
       mode: 'cors',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Access-Control-Request-Method': 'POST',
+        'Access-Control-Request-Headers': 'Content-Type'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        // If preflight is successful, send the actual POST request
+        return fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          mode: 'cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        });
+      } else {
+        throw new Error('Preflight request failed');
       }
     })
     .then(response => {
