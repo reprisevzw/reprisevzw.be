@@ -29,9 +29,9 @@ async function logSubmissionToDynamoDB(name, email, message) {
 export const handler = async (event) => {
   // CORS headers
   const headers = {
-    "Access-Control-Allow-Origin": "https://reprisevzw.be",
+    "Access-Control-Allow-Origin": "*", // Allow all origins for testing. Replace with your domain in production.
     "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
-    "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+    "Access-Control-Allow-Methods": "OPTIONS,POST"
   };
 
   // Handle preflight requests
@@ -39,7 +39,7 @@ export const handler = async (event) => {
     return {
       statusCode: 200,
       headers: headers,
-      body: ''
+      body: JSON.stringify({ message: 'Preflight request successful' })
     };
   }
 

@@ -18,7 +18,7 @@ of gebruik het onderstaande formulier:
 
 <div class="grid cell cell--auto" style="border:1px solid #333">
 <div class="m-3" style="width: 100%">
-<form id="contactForm" action="https://pts6vjw7e1.execute-api.eu-north-1.amazonaws.com/dev/repriseContactForm" method="POST"  style="width: 100%">
+<form id="contactForm" action="https://pts6vjw7e1.execute-api.eu-north-1.amazonaws.com/dev/repriseContactForm" method="POST" style="width: 100%">
   <div class="form-group mt-4 mb-4">
     <div>
       <label for="inputName">Volledige naam:</label>
@@ -66,17 +66,21 @@ document.addEventListener('DOMContentLoaded', function() {
       body: formData,
       mode: 'cors',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Origin': window.location.origin
+        'Content-Type': 'application/x-www-form-urlencoded'
       }
     })
     .then(response => {
       if (response.ok) {
-        alert('Bericht verzonden!');
-        form.reset();
+        return response.text();
       } else {
-        alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+        throw new Error('Server responded with an error');
       }
+    })
+    .then(html => {
+      // Replace the form with the response HTML
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+      form.parentNode.replaceChild(tempDiv.firstChild, form);
     })
     .catch(error => {
       console.error('Error:', error);
