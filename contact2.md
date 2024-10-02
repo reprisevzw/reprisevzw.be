@@ -78,19 +78,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       })
       .then(html => {
-        // Hide the article__content div
-        const articleContent = document.querySelector('.article__content');
-        if (articleContent) {
-          articleContent.style.display = 'none';
-        }
+        // Hide the form with id "contactForm"
+        form.style.display = 'none';
 
         // Log the HTML response to the console
         console.log('Form submission response:', html);
 
-        // Replace the form with the response HTML
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = html;
-        form.parentNode.replaceChild(tempDiv.firstChild, form);
+        // Add the received HTML response to the div with id="reponse"
+        const responseDiv = document.getElementById('reponse');
+        responseDiv.innerHTML = html;
       })
       .catch(error => {
         console.error('Error:', error);
