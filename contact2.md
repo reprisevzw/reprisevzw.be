@@ -77,6 +77,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       })
       .then(html => {
+        // Hide the article__content div
+        const articleContent = document.querySelector('.article__content');
+        if (articleContent) {
+          articleContent.style.display = 'none';
+        }
+
+        // Log the HTML response to the console
+        console.log('Form submission response:', html);
+
         // Replace the form with the response HTML
         const tempDiv = document.createElement('div');
         tempDiv.innerHTML = html;
