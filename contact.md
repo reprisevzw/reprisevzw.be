@@ -18,7 +18,7 @@ of gebruik het onderstaande formulier:
 
 <div class="grid cell cell--auto" style="border:1px solid #333">
 <div class="m-3" style="width: 100%">
-<form action="https://pts6vjw7e1.execute-api.eu-north-1.amazonaws.com/prod/repriseContactForm" method="POST"  style="width: 100%">
+<form id="contactForm" action="https://pts6vjw7e1.execute-api.eu-north-1.amazonaws.com/dev/repriseContactForm" method="POST" style="width: 100%">
   <div class="form-group mt-4 mb-4">
     <div>
       <label for="inputName">Volledige naam:</label>
@@ -43,7 +43,63 @@ of gebruik het onderstaande formulier:
   </div>
   <!-- add hidden Honeypot input to prevent spams -->
   <input type="hidden" name="_gotcha" style="display:none !important">
-  <button class="button button--primary button--rounded button--lg" type="submit">Verstuur!</button>
+  <button id="submitButton" class="button button--primary button--rounded button--lg" type="submit">Verstuur!</button>
 </form>
+<div id="reponse"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
+  const submitButton = document.getElementById('submitButton');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Disable the button and change its text
+    submitButton.disabled = true;
+    submitButton.textContent = 'Verzenden...';
+    submitButton.style.opacity = '0.5';
+
+    // Submit the form
+    const formData = new URLSearchParams(new FormData(form));
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          return response.text();
+        } else {
+          throw new Error('Server responded with an error');
+        }
+      })
+      .then(html => {
+        // Hide the form with id "contactForm"
+        form.style.display = 'none';
+
+        // Log the HTML response to the console
+        console.log('Form submission response:', html);
+
+        // Add the received HTML response to the div with id="reponse"
+        const responseDiv = document.getElementById('reponse');
+        responseDiv.innerHTML = html;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+      })
+      .finally(() => {
+        // Re-enable the button and restore its text
+        submitButton.disabled = false;
+        submitButton.textContent = 'Verstuur!';
+        submitButton.style.opacity = '1';
+      });
+  });
+});
+</script>
 </div>
 </div>
