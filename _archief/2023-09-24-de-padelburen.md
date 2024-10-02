@@ -3,6 +3,7 @@ layout: article
 title: De Padelburen
 permalink: /voorstellingen/de-padelburen
 key: page-single
+categories: [archive]
 cover: /assets/images/voorstellingen/de-padelburen/de-padelburen-800.webp
 toc: false
 ---
