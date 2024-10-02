@@ -45,6 +45,7 @@ of gebruik het onderstaande formulier:
   <input type="hidden" name="_gotcha" style="display:none !important">
   <button id="submitButton" class="button button--primary button--rounded button--lg" type="submit">Verstuur!</button>
 </form>
+<div id="reponse"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
