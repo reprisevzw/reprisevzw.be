@@ -66,8 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
       body: formData,
       mode: 'cors',
       headers: {
-        // 'Access-Control-Request-Method': 'POST',
-        // 'Access-Control-Request-Headers': 'Content-Type',
         'Content-Type': 'application/x-www-form-urlencoded'
       }
     })
