@@ -30,7 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const resultMessage = document.getElementById('result-message');
 
   // Fetch events from the API
-  fetch('https://1hjn40kz97.execute-api.eu-north-1.amazonaws.com/amano/events-cached')
+  fetch('https://1hjn40kz97.execute-api.eu-north-1.amazonaws.com/amano/events-cached', {
+    method: 'GET',
+    mode: 'cors',
+  })
     .then(response => response.json())
     .then(data => {
       data.forEach(event => {
