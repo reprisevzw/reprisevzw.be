@@ -66,7 +66,7 @@ Selecteer hieronder het evenement waarvoor u een parkeerplaats wilt reserveren e
 <div class="center-wrapper">
   <div id="parking-form">
     <select id="event-select">
-      <option value="">Selecteer een evenement</option>
+      <option value="">Selecteer een evenement (max 2 maanden op voorhand)</option>
     </select>
     <input type="email" id="email-input" placeholder="Uw e-mailadres">
     <button id="submit-button" class="button button--primary button--rounded button--lg">Reserveer parkeerplaats</button>
