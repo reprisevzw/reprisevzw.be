@@ -29,7 +29,7 @@ In ons eerste seizoen (2023-2024) pakken we onmiddellijk uit met twee kleppers v
 Ook het volgende seizoen (2024-2025) is ondertussen helemaal ingepland!
 - [HOOG IN DE LUCHT](/voorstellingen/hoog-in-de-lucht) van Sven De Ridder Company, 1 oktober 2024
 - [LADY AGATHA](/voorstellingen/lady-agatha) van Loge10, 11 december 2024
-- [DE INSTAGRANNIE](/voorstellingen/de-instagrannie) van het Prethuis, 17 april 2024
+- [DE INSTAGRANNIE](/voorstellingen/de-instagrannie) van het Prethuis, 17 april 2025
 
 ## Cast en tickets
 
