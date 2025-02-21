@@ -31,5 +31,5 @@ Annie Gruwez heeft de sociale media ontdekt. Haar account ‘Instagrannie for li
 * Danni Heylen (Pascale uit FC De Kampioenen)
 * Hugo Sigal (Nicole & Hugo)
 * Leen Dendievel (Kaat uit Thuis)
-* Lennart Lemmens (Stand uit Thuis)
+* Lennart Lemmens (Stan uit Thuis)
 * Jeroen Maes
