@@ -13,7 +13,7 @@ toc: false
 
 [![la-cage-aux-folles-header]({{ site.baseurl }}/assets/images/voorstellingen/la-cage-aux-folles/la-cage-aux-folles-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/la-cage-aux-folles/la-cage-aux-folles-800px.webp)
 
-### [Tickets gaan binnenkort in verkoop!](#)
+### [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/5d49dc24-00cb-4cad-b8e4-06aa44689d93)
 
 - Standaard tarief: €26,00
 - Groep: €25,00 (vanaf 10 personen)

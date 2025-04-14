@@ -13,7 +13,7 @@ toc: false
 
 [![een-rits-te-ver-header]({{ site.baseurl }}/assets/images/voorstellingen/een-rits-te-ver/een-rits-te-ver-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/een-rits-te-ver/een-rits-te-ver-800px.webp)
 
-### [Tickets gaan binnenkort in verkoop!](#)
+### [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/6199227e-57f7-47c1-bcd8-144d3b5f28f3)
 
 - Standaard tarief: €24,00
 - Groep: €23,00 (vanaf 10 personen)

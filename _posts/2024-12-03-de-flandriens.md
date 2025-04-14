@@ -13,7 +13,7 @@ toc: false
 
 [![de-flandriens-header]({{ site.baseurl }}/assets/images/voorstellingen/de-flandriens/de-flandriens-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-flandriens/de-flandriens-800px.webp)
 
-### [Tickets gaan binnenkort in verkoop!](#)
+### [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/2d09337a-1390-48ca-bfc0-9e0464543d28)
 
 - Standaard tarief: €27,00
 - Groep: €26,00 (vanaf 10 personen)
