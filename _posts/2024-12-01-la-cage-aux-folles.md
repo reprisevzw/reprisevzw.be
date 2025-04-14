@@ -21,6 +21,8 @@ toc: false
 
 Opgelet: tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar.
 
+{% include snippets/abonnementsformule.md %}
+
 ### Donderdag 2 Oktober 2025, CCHA Hasselt, 20:00
 
 In ‘LA CAGE AUX FOLLES’ duiken we in het nachtleven van Knokke-Heist in de jaren ’70!
