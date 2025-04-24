@@ -10,11 +10,6 @@ article_header:
 
 {% include snippets/abonnementsformule.md %}
 
-
-### Seizoen 2024-2025
-
-- [De Instagrannie](/voorstellingen/de-instagrannie) van het Prethuis, 17 april 2025, CCHA Hasselt: [Koop hier uw tickets!](https://tickets.roodfluweel.be/reprise/Show/SeatSelection/78ae96b8-4b94-4308-b44d-a5db0b3ebd33)
-
 ### Seizoen 2025-2026
 - [La Cage Aux Folles](/voorstellingen/la-cage-aux-folles) van Loge 10 Theaterproducties, 2 oktober 2025, CCHA Hasselt: [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/5d49dc24-00cb-4cad-b8e4-06aa44689d93)
 - [Een Rits Te Ver](/voorstellingen/een-rits-te-ver) van het Farcetheater, 11 december 2025, CCHA Hasselt: [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/6199227e-57f7-47c1-bcd8-144d3b5f28f3)
