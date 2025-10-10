@@ -13,16 +13,6 @@ toc: false
 
 [![la-cage-aux-folles-header]({{ site.baseurl }}/assets/images/voorstellingen/la-cage-aux-folles/la-cage-aux-folles-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/la-cage-aux-folles/la-cage-aux-folles-800px.webp)
 
-### [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/5d49dc24-00cb-4cad-b8e4-06aa44689d93)
-
-- Standaard tarief: €26,00
-- Groep: €25,00 (vanaf 10 personen)
-- Groep: €24,00 (vanaf 20 personen)
-
-Opgelet: tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar.
-
-{% include snippets/abonnementsformule.md %}
-
 ### Donderdag 2 Oktober 2025, CCHA Hasselt, 20:00
 
 In ‘LA CAGE AUX FOLLES’ duiken we in het nachtleven van Knokke-Heist in de jaren ’70!
