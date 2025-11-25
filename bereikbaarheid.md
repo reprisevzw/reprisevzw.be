@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const resultMessage = document.getElementById('result-message');
 
   // Fetch events from the API
-  fetch('https://1hjn40kz97.execute-api.eu-north-1.amazonaws.com/amano/events-cached', {
+  fetch('https://backend.veemax.be/fn/amano/events-cached', {
     method: 'GET',
     mode: 'cors',
   })
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     submitButton.textContent = 'Verzenden...';
     submitButton.style.opacity = '0.5';
 
-    fetch('https://1hjn40kz97.execute-api.eu-north-1.amazonaws.com/amano/send-invite', {
+    fetch('https://backend.veemax.be/fn/amano/send-invite', {
       method: 'POST',
       mode: 'cors',
       headers: {
