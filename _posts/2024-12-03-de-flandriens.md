@@ -19,7 +19,8 @@ toc: false
 - Groep: €26,00 (vanaf 10 personen)
 - Groep: €25,00 (vanaf 20 personen)
 
-Opgelet: tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar.
+Opgelet: tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar. Er wordt
+een reservatiekost van 2 euro per boeking gerekend.
 
 ### Donderdag 12 Maart 2026, CCHA Hasselt, 20:00
 
