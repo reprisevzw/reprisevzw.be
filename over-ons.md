@@ -22,14 +22,18 @@ Toen even later alles in een stroomversnelling kwam, werd Reprise vzw op 8 septe
 
 ## Programma
 
-In ons eerste seizoen (2023-2024) pakken we onmiddellijk uit met twee kleppers van formaat:
-- [DE MUIZENVAL](/voorstellingen/de-muizenval) van Agatha Christie ([Loge10 Theaterproducties](https://www.loge10.be/))
-- [DE PADELBUREN](/voorstellingen/de-padelburen) van Jeroen Maes ([Het PretHuis](https://www.prethuis.be/)).
+Ons derde seizoen (25-26) is volop bezig én erg succesvol!
 
-Ook het volgende seizoen (2024-2025) is ondertussen helemaal ingepland!
-- [HOOG IN DE LUCHT](/voorstellingen/hoog-in-de-lucht) van Sven De Ridder Company, 1 oktober 2024
-- [LADY AGATHA](/voorstellingen/lady-agatha) van Loge10, 11 december 2024
-- [DE INSTAGRANNIE](/voorstellingen/de-instagrannie) van het Prethuis, 17 april 2025
+**‘La cage aux folles’** met een weergaloze Koen Crucke zorgde voor een minutenlange staande ovatie begin oktober ’25 en de campingklucht **‘Een rits te ver’** trok alle lachers moeiteloos over de streep half december ’25. 
+
+Ook onze laatste productie dit seizoen belooft een voltreffer te worden: in **‘De Flandriens’** fietsen enkele bekende acteurs zoals Peter Bulckaen, Katja Retsin en Wim Stevens op 12 maart ‘26 naar ongekende komische hoogtes in de nieuwe prethuiskomedie van Jeroen Maes. Hier kan u nog tickets voor reserveren via onze site.
+
+En ook op die dag maken we de titels bekend van ons vierde theaterseizoen. En we breiden uit: in plaats van 3 voorstellingen bieden we u volgend seizoen maar liefst 4 voorstellingen aan, zorgvuldig geselecteerd uit het ruime Vlaamse theateraanbod. 
+
+De abo-formule blijft behouden: u krijgt een fixe korting bij het boeken vanaf 3 verschillende voorstelllingen.  Alle info hierover vindt u onder ‘tickets’ vanaf 12 maart ‘26!
+
+Nog dit seizoen (2025-2026):
+- [DE FLANDRIENS](/voorstellingen/de-flandriens) van het Prethuis, 12 maart 2026
 
 ## Cast en tickets
 
