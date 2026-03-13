@@ -15,9 +15,9 @@ toc: false
 
 ### [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/4f6e23e0-5597-4183-8cfb-b220eaa527ef)
 
-- Standaard tarief: €28,00
-- Groep: €27,00 (vanaf 10 personen)
-- Groep: €26,00 (vanaf 20 personen)
+- Standaard tarief: €27,00
+- Groep: €26,00 (vanaf 10 personen)
+- Groep: €25,00 (vanaf 20 personen)
 
 Opgelet: tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar. Er wordt
 een reservatiekost van 2 euro per boeking gerekend.
