@@ -1,21 +1,26 @@
 ---
-layout: article
 title: De Muizenval
-permalink: /voorstellingen/de-muizenval
-key: page-single
-categories: [archive]
-cover: /assets/images/voorstellingen/de-muizenval/de-muizenval-poster-xs.webp
-toc: false
+datum: 2023-12-11 20:00
+affiche: /assets/images/voorstellingen/de-muizenval/de-muizenval-poster-xs.webp
+cast:
+  - naam: Timo Descamps
+    bekend_van: Spring
+  - naam: Karin Jacobs
+    bekend_van: Wittekerke, Flikken
+  - naam: Rikkert Van Dijck
+    bekend_van: Thuis
+  - naam: Nathalie Wijnants
+    bekend_van: Thuis
+  - naam: Elias Bosmans
+    bekend_van: Thuis
+  - naam: Marijke Hofkens
+    bekend_van: Thuis
+  - naam: Marc Stroobants
+    bekend_van: Thuis
+  - naam: Jérémie Vrielynck
+    bekend_van: The Voice
 ---
-
-## 11 December 2023, CCHA Hasselt
-
-<!--more-->
-
-![Affiche De Muizenval]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
-
 Laat je meeslepen in het bloedstollende moordverhaal van Agatha Christie.
-
 
 De Muizenval speelt zich af in het pension Monkswell Manor. Een aantal gasten is door de sneeuw opgesloten in het hotel van een jong echtpaar. In de omgeving van het hotel heeft eerder die dag een moord plaatsgevonden. Een brigadier van politie bezoekt vervolgens het hotel omdat hij vermoedt dat de moordenaar (of moordenares) zich in het hotel schuilhoudt.
 
@@ -24,13 +29,3 @@ De spanning loopt vervolgens nog verder op als er een tweede slachtoffer valt. H
 Meer over het verhaal kunnen we nog niet vertellen, dat zou de verrassing bederven en de traditie verbreken dat niemand die de show heeft gezien, vertelt wie de moordenaar is – wat inhoud dat er maar één manier is om er achter te komen…
 
 …komen kijken!
-
-MET:
-* Timo Descamps (Spring)
-* Karin Jacobs (Wittekerke, Flikken)
-* Rikkert Van Dijck (Thuis)
-* Nathalie Wijnants (Thuis)
-* Elias Bosmans (Thuis)
-* Marijke Hofkens (Thuis)
-* Marc Stroobants (Thuis)
-* Jérémie Vrielynck (The Voice)
