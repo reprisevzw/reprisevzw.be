@@ -20,6 +20,7 @@
         </ul>
       </nav>
     </div>
-    <p class="voet__copy">© {{ site.time | date: "%Y" }} Reprise vzw</p>
+    {%- assign _p = site.data.reprise.privacy %}
+    <p class="voet__copy">© {{ site.time | date: "%Y" }} {{ _p.naam }} · {{ _p.zetel }} · ondernemingsnummer {{ _p.ondernemingsnummer }} · {{ _p.rpr }}</p>
   </div>
 </footer>

@@ -787,6 +787,36 @@
   }
 }
 
+// Inschrijfformulier nieuwsbrief
+.nieuwsbrief-form {
+  max-width: 32rem;
+  gap: 16px;
+}
+
+// Lokaasveld tegen spamrobots: voor mensen onzichtbaar, listmonk weigert het als het ingevuld is.
+.nieuwsbrief-form__lokaas {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.nieuwsbrief-form__privacy {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $gedempt;
+  a {
+    color: $accent;
+    text-underline-offset: 3px;
+  }
+}
+
+.veld__optioneel {
+  font-weight: 400;
+  color: $gedempt;
+}
+
 // Meldingen in een kader (ticketvoorwaarden, geen seizoen)
 .melding {
   display: flex;
