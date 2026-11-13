@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-[![stepping-out-header]({{ site.baseurl }}/assets/images/voorstellingen/stepping-out/stepping-out-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/stepping-out/stepping-out-800px.webp)
+[![Affiche Stepping Out]({{ site.baseurl }}/assets/images/voorstellingen/stepping-out/stepping-out-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/stepping-out/stepping-out-800px.webp)
 
 ### [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/4f6e23e0-5597-4183-8cfb-b220eaa527ef)
 

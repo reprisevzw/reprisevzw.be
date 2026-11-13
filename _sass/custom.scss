@@ -16,6 +16,7 @@
   }
 
   #logo {
+    display: block;
     content: url($baseurl + "/assets/images/logo/reprise_hor_color_large_50pct.svg");
     height: 5rem;
   }
@@ -37,6 +38,7 @@
   }
 
   #logo {
+    display: block;
     content: url($baseurl + "/assets/images/logo/logo_50pct.svg");
     height: 8rem;
   }

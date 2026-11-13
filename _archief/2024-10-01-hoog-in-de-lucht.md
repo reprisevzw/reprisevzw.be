@@ -12,7 +12,7 @@ toc: false
 
 <!--more-->
 
-[![hoog-in-de-lucht-header]({{ site.baseurl }}/assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-800.webp)
+[![Affiche Hoog In De Lucht]({{ site.baseurl }}/assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/hoog-in-de-lucht/hoog-in-de-lucht-affiche-800.webp)
 
 
 

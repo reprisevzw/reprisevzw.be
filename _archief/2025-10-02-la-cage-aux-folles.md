@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-[![la-cage-aux-folles-header]({{ site.baseurl }}/assets/images/voorstellingen/la-cage-aux-folles/la-cage-aux-folles-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/la-cage-aux-folles/la-cage-aux-folles-800px.webp)
+[![Affiche La Cage Aux Folles]({{ site.baseurl }}/assets/images/voorstellingen/la-cage-aux-folles/la-cage-aux-folles-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/la-cage-aux-folles/la-cage-aux-folles-800px.webp)
 
 ### Donderdag 2 Oktober 2025, CCHA Hasselt, 20:00
 

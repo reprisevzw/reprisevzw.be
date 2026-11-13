@@ -8,9 +8,9 @@
     <div class="main">
       <div class="header__title">
         <div class="header__brand">
-          <div id="logo">logo</div>
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
+          <a id="logo" href="{{ __return }}" aria-label="{{ site.title }} – home">{{ site.title }}</a>
 <!--          {%- if site.title -%}-->
 <!--            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>-->
 <!--          {%- endif -%}-->

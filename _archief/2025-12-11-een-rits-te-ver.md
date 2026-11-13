@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-[![een-rits-te-ver-header]({{ site.baseurl }}/assets/images/voorstellingen/een-rits-te-ver/een-rits-te-ver-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/een-rits-te-ver/een-rits-te-ver-800px.webp)
+[![Affiche Een Rits Te Ver]({{ site.baseurl }}/assets/images/voorstellingen/een-rits-te-ver/een-rits-te-ver-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/een-rits-te-ver/een-rits-te-ver-800px.webp)
 
 ### Donderdag 11 December 2025, CCHA Hasselt, 20:00
 

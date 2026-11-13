@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-[![rust-roest-header]({{ site.baseurl }}/assets/images/voorstellingen/rust-roest/rust-roest-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/rust-roest/rust-roest-800px.webp)
+[![Affiche Rust Roest]({{ site.baseurl }}/assets/images/voorstellingen/rust-roest/rust-roest-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/rust-roest/rust-roest-800px.webp)
 
 ### [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/07dfc6a1-78ad-47db-8edb-c4dc7ccfc5bd)
 

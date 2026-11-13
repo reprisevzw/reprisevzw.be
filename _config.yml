@@ -18,7 +18,7 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://www.reprisevzw.be/ # the base hostname & protocol for your site e.g. https://www.someone.com
+url     : https://www.reprisevzw.be # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : Reprise vzw
 description: > # this means to ignore newlines until "Language & timezone"
@@ -169,7 +169,12 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: google # false (default), "google", "custom"
+  provider: umami # false (default), "google", "umami", "custom"
+
+  ## Umami: self-hosted, counts visitors without cookies (no banner needed)
+  umami:
+    url        : https://stats.reprisevzw.be
+    website_id : f1986b29-7d86-4be3-bee0-25d020f3824e
 
   ## Google Analytics
   google:
@@ -201,6 +206,12 @@ exclude:
   - /test
   - /vendor
   - /.idea
+  - build.sh
+  - serve.sh
+  - aws_lamda_getform.js
+  - /tools
+  - contact-old.md
+  - archive.html
 
 defaults:
   - scope:

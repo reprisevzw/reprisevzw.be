@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-[![hoog-in-de-lucht-header]({{ site.baseurl }}/assets/images/voorstellingen/lady-agatha/lady-agatha-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/lady-agatha/lady-agatha-800.webp)
+[![Affiche Lady Agatha]({{ site.baseurl }}/assets/images/voorstellingen/lady-agatha/lady-agatha-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/lady-agatha/lady-agatha-800.webp)
 
 ### Woensdag 11 December 2024, CCHA Hasselt, 20:00
 
