@@ -1,0 +1,54 @@
+{%- comment -%} Welke pagina is "huidig"? Een voorstelling hoort bij Programma. {%- endcomment -%}
+{%- assign _huidig = page.url | relative_url -%}
+{%- if page.collection == "voorstellingen" -%}{%- assign _huidig = '/' | relative_url -%}{%- endif -%}
+<a class="overslaan" href="#inhoud">Naar de inhoud</a>
+<header class="kop">
+  <div class="houder kop__binnen">
+    <a class="kop__logo" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/logo/reprise_hor_color_large.svg' | relative_url }}" alt="Reprise vzw, naar de startpagina" width="162" height="64">
+    </a>
+    <nav class="kop__nav" aria-label="Hoofdnavigatie">
+      <ul class="kop__links">
+        {%- for item in site.data.reprise.navigatie %}
+        {%- if item.kort %}
+        {%- assign _url = item.url | relative_url %}
+        <li><a href="{{ _url }}"{% if _url == _huidig %} aria-current="page"{% endif %}>{{ item.titel }}</a></li>
+        {%- endif %}
+        {%- endfor %}
+      </ul>
+      {%- assign _tickets = '/tickets' | relative_url %}
+      <a class="knop knop--primair kop__tickets" href="{{ _tickets }}"{% if _tickets == _huidig %} aria-current="page"{% endif %}>{% include icoon/ticket.html %}Tickets</a>
+      <a class="knop knop--rand kop__menu-link" href="#snel-naar">{% include icoon/menu.html %}Menu</a>
+      <button class="knop knop--rand kop__menu-knop" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="kop__menu-dicht">{% include icoon/menu.html %}Menu</span>
+        <span class="kop__menu-open">{% include icoon/sluiten.html %}Sluiten</span>
+      </button>
+    </nav>
+  </div>
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__nav" aria-label="Menu">
+      <ul class="menu__lijst">
+        {%- for item in site.data.reprise.navigatie %}
+        {%- assign _url = item.url | relative_url %}
+        <li>
+          <a href="{{ _url }}"{% if _url == _huidig %} aria-current="page"{% endif %}>
+            <span class="menu__naam">{{ item.titel }}</span>
+            {%- if _url == _huidig %}<span class="menu__hier">U bent hier</span>{% else %}{% include icoon/chevron.html maat=22 %}{% endif %}
+          </a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <div class="menu__contact">
+      <div>
+        <p class="bovenlabel">E-mail</p>
+        <a class="link" href="mailto:{{ site.author.email | encode_email }}">{{ site.author.email }}</a>
+      </div>
+      <div>
+        <p class="bovenlabel">Alle voorstellingen in</p>
+        {%- assign _l = site.data.reprise.locatie %}
+        <p>{{ _l.naam }}, {{ _l.straat }}, {{ _l.postcode }} {{ _l.gemeente }}</p>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,4 @@
+{%- assign _c = include.bedrag | times: 100 | round -%}
+{%- assign _e = _c | divided_by: 100 -%}
+{%- assign _r = _c | modulo: 100 -%}
+€{{ _e }},{% if _r < 10 %}0{% endif %}{{ _r }}

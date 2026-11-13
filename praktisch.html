@@ -1,0 +1,142 @@
+---
+title: Praktisch
+permalink: /praktisch/
+layout: default
+leaflet: true
+description: Zo komt u naar CCHA in Hasselt, met de auto of met het openbaar vervoer, en zo reserveert u een parkeerplaats.
+redirect_from:
+  - /bereikbaarheid
+---
+{%- include voorstellingen.html -%}
+{%- assign _l = site.data.reprise.locatie -%}
+<section class="pagina-kop pagina-kop--praktisch" aria-labelledby="pagina-titel">
+  <div class="houder">
+    <p class="bovenlabel">Uw avond voorbereiden</p>
+    <h1 id="pagina-titel" class="pagina-kop__titel">Praktisch</h1>
+    <div class="ligging">
+      <div class="ligging__info">
+        <div class="ligging__adres">
+          <p class="bovenlabel">Locatie</p>
+          <p class="ligging__naam">{{ _l.naam }}</p>
+          <p class="ligging__straat">{{ _l.straat }}<br>{{ _l.postcode }} {{ _l.gemeente }}</p>
+          <p>Alle voorstellingen beginnen om {{ _l.aanvang }}.</p>
+          <p class="gedempt">GPS-coördinaten: latitude 50.92679, longitude 5.34725</p>
+          <a class="link link--pijl" href="{{ _l.kaart }}">Open in Google Maps {% include icoon/extern.html %}</a>
+        </div>
+        <nav class="ligging__nav" aria-label="Zo komt u er">
+          <p class="bovenlabel">Zo komt u er</p>
+          <a class="link" href="#auto-hasselt">Met de auto, inwoners van Hasselt</a>
+          <a class="link" href="#parking">Met de auto, van buiten Hasselt</a>
+          <a class="knop knop--spook ligging__knop" href="#parking">{% include icoon/auto.html %}Parkeerplaats reserveren<span class="knop__extra">· €{{ site.data.reprise.parkeren.prijs }}</span></a>
+          <a class="link" href="#ov">Met het openbaar vervoer</a>
+        </nav>
+      </div>
+      <div class="ligging__kaart">
+        <div id="kaart" class="kaart-osm" data-afbeeldingen="{{ '/assets/leaflet/images/' | relative_url }}" role="region" aria-label="Kaart van OpenStreetMap met CCHA gemarkeerd">
+          <p class="kaart-osm__zonder-js">De kaart heeft JavaScript nodig. <a class="link" href="{{ _l.kaart }}">Open de ligging in Google Maps</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sectie sectie--lijn" aria-labelledby="route-titel">
+  <div class="houder">
+    <h2 id="route-titel" class="sectie__titel sectie__titel--groot">Zo komt u naar CCHA</h2>
+    <div class="routes">
+
+      <article id="auto-hasselt" class="route" aria-labelledby="route-hasselt">
+        <div class="route__kop">
+          {% include icoon/auto.html maat=34 lijn=1.8 %}
+          <p class="bovenlabel">Met de auto</p>
+          <h3 id="route-hasselt" class="route__titel">Inwoners van Hasselt</h3>
+          <p class="route__label">Gratis</p>
+        </div>
+        <div class="route__inhoud">
+          <p class="route__tekst">De werking van de parking aan CCHA is sinds kort gewijzigd: slimme slagbomen met nummerplaatherkenning regelen nu de toegang.</p>
+          <p class="route__tekst">U kan gratis parkeren door gebruik te maken van het Hasselts Parkeerbudget. U hoeft niet op voorhand te reserveren.</p>
+          <a class="link link--pijl" href="https://www.hasselt.be/nl/parkeerbudget">Meer over het Parkeerbudget {% include icoon/extern.html %}</a>
+        </div>
+      </article>
+
+      <article id="parking" class="route" aria-labelledby="route-parking">
+        <div class="route__kop">
+          {% include icoon/auto.html maat=34 lijn=1.8 %}
+          <p class="bovenlabel">Met de auto</p>
+          <h3 id="route-parking" class="route__titel">Van buiten Hasselt</h3>
+          <p class="route__label">€{{ site.data.reprise.parkeren.prijs }} per avond</p>
+        </div>
+        <div class="route__inhoud">
+          <p class="route__tekst">U kan een parkeerplaats reserveren aan 3 euro per avond. Gebruik het formulier hieronder om een reservatielink aan te vragen. Indien u niet reserveert, betaalt u het geldend uurtarief van 2 euro per uur.</p>
+
+          <form class="formulier formulier--kader" id="parking-form" aria-labelledby="parking-form-titel" novalidate>
+            <h4 id="parking-form-titel" class="formulier__titel">Parkeerplaats reserveren</h4>
+            <div class="formulier__stapel">
+              <div class="veld">
+                <label for="event-select">Voorstelling</label>
+                <p class="veld__hulp" id="event-hulp">U kan ten vroegste 2 maanden op voorhand reserveren.</p>
+                <select id="event-select" name="event_id" aria-describedby="event-hulp" required>
+                  <option value="">Selecteer een voorstelling</option>
+                </select>
+              </div>
+              <div class="veld">
+                <label for="email-input">Uw e-mailadres</label>
+                <input type="email" id="email-input" name="email" autocomplete="email" placeholder="naam@voorbeeld.be" required>
+              </div>
+            </div>
+            <button id="submit-button" class="knop knop--primair" type="submit">Vraag een reservatielink aan {% include icoon/pijl.html maat=20 %}</button>
+            <p id="result-message" class="formulier__melding" role="status" aria-live="polite"></p>
+            <noscript><p class="formulier__melding">Dit formulier werkt alleen met JavaScript. Lukt het niet? Mail ons op <a class="link" href="mailto:{{ site.author.email | encode_email }}">{{ site.author.email }}</a>.</p></noscript>
+          </form>
+
+          <div class="goed-om-te-weten">
+            <p class="bovenlabel">Goed om te weten</p>
+            <ul class="opsomming">
+              <li>U krijgt een e-mail van <strong>parkinghasselt@amano.be</strong> met een link om uw parkeerplaats te reserveren. De e-mail komt dus niet van Reprise.</li>
+              <li><strong>Let op: u moet de reservatie nog bevestigen en betalen via de link in die e-mail.</strong></li>
+              <li>Amano, de beheerder van de parking, staat slechts één reservatie per e-mailadres toe. Wenst u meerdere plaatsen? Vul het formulier dan meerdere keren in, telkens met een ander e-mailadres.</li>
+              <li>Geen e-mail ontvangen? Kijk ook in uw spamfolder.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article id="ov" class="route" aria-labelledby="route-ov">
+        <div class="route__kop">
+          {% include icoon/bus.html %}
+          <p class="bovenlabel">Vanaf het station</p>
+          <h3 id="route-ov" class="route__titel">Met het openbaar vervoer</h3>
+          <p class="route__label">Halte Kunstlaan</p>
+        </div>
+        <div class="route__inhoud">
+          <div class="route__opties">
+            <div>
+              <h4 class="route__optie">Boulevardpendel</h4>
+              <p>Rijdt op weekdagen van 7.30 tot 19 u. U stapt af aan de halte Kunstlaan en moet dan nog 100 m te voet naar CCHA.</p>
+            </div>
+            <div>
+              <h4 class="route__optie">Bus H1</h4>
+              <p>Rijdt om het half uur richting CCHA, halte Kunstlaan. De laatste bus vertrekt omstreeks 19.20 u aan het station.</p>
+            </div>
+          </div>
+          <p>Meer informatie over de uurregelingen van De Lijn en over de trein:</p>
+          <div class="route__links">
+            <a class="link link--pijl" href="https://www.delijn.be/">delijn.be {% include icoon/extern.html %}</a>
+            <a class="link link--pijl" href="https://www.belgiantrain.be/">belgiantrain.be {% include icoon/extern.html %}</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+{%- comment -%} Slug en datum van de komende voorstellingen, om het formulier voor te selecteren. {%- endcomment -%}
+<script>
+  window.repriseVoorstellingen = {
+    {%- for v in komende %}
+    {{ v.slug | jsonify }}: { titel: {{ v.title | jsonify }}, datum: {{ v.datum | date: "%Y-%m-%d" | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  };
+</script>
+<script src="{{ '/assets/js/praktisch.js' | relative_url }}" defer></script>

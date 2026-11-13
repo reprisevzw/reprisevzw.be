@@ -1,0 +1,4 @@
+<a class="knop knop--spook{% if include.klein %} knop--klein{% endif %}" href="{{ '/praktisch/' | relative_url }}?voorstelling={{ include.v.slug }}#parking">
+  {%- include icoon/auto.html -%}
+  Parkeerplaats reserveren<span class="sr"> voor {{ include.v.title }}</span><span class="knop__extra">· €{{ site.data.reprise.parkeren.prijs }}</span>
+</a>

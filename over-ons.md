@@ -1,11 +1,6 @@
 ---
-layout: article
 title: Over ons
 permalink: /over-ons
-article_header:
-  type: cover
-  image:
-    src: /assets/images/reprise/header_reducedheight_3.webp
 ---
 
 Beste toeschouwer
@@ -25,11 +20,12 @@ Toen even later alles in een stroomversnelling kwam, werd Reprise vzw op 8 septe
 ## Cast en tickets
 
 Al onze stukken kunnen rekenen op een ijzersterke en professionele cast & crew. En u ziet uw favoriete tv-acteurs live aan het werk.
-Zorg dat u erbij bent! 
+Zorg dat u erbij bent!
 
 **[Bestel vandaag nog je tickets!](/tickets)**
 
 Tot binnenkort!
 
 Dorien, Gunter en Maxime
-![Dorien, Gunter en Maxime]({{ site.baseurl }}/assets/images/reprise/groepsfoto-muizenval.jpg){:class="img-responsive"}
+
+![Dorien, Gunter en Maxime]({{ site.baseurl }}/assets/images/reprise/groepsfoto-muizenval.jpg)

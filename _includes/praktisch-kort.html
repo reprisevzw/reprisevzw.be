@@ -1,0 +1,27 @@
+{%- assign _l = site.data.reprise.locatie -%}
+<section class="sectie praktisch-kort" aria-labelledby="praktisch-titel">
+  <div class="houder">
+    <div class="sectie__kop">
+      {%- if include.bovenlabel %}<p class="bovenlabel">Uw avond voorbereiden</p>{% endif %}
+      <h2 id="praktisch-titel" class="sectie__titel">Praktisch</h2>
+    </div>
+    <div class="praktisch-kort__raster">
+      <div class="weetje">
+        {% include icoon/locatie.html %}
+        <div>
+          <h3 class="weetje__titel">Locatie</h3>
+          <p>{{ _l.voluit }}<br>{{ _l.straat }}, {{ _l.postcode }} {{ _l.gemeente }}</p>
+          <p>Alle voorstellingen beginnen om {{ _l.aanvang }}.</p>
+        </div>
+      </div>
+      <div class="weetje">
+        {% include icoon/parking.html %}
+        <div>
+          <h3 class="weetje__titel">Parkeren</h3>
+          <p>{{ site.data.reprise.parkeren.kort }}</p>
+          <a class="link link--pijl link--vet" href="{{ '/praktisch/' | relative_url }}{% if include.v %}?voorstelling={{ include.v.slug }}{% endif %}#parking">Reserveer een parkeerplaats {% include icoon/pijl.html %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

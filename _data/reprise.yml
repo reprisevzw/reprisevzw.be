@@ -1,0 +1,79 @@
+# Gedeelde teksten en gegevens voor de hele site.
+# Pas hier aan, dan verandert het overal tegelijk.
+
+slogan: Bekende theatertitels met bekende acteurs, in het cultureel centrum van Hasselt.
+
+locatie:
+  naam: CCHA
+  voluit: Cultureel Centrum Hasselt (CCHA)
+  straat: Kunstlaan 5
+  postcode: "3500"
+  gemeente: Hasselt
+  aanvang: "20:00"
+  kaart: https://maps.app.goo.gl/KkdsDtXpD2LTySCM7
+
+ticketvoorwaarden: >-
+  Tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar.
+  Er wordt een reservatiekost van 2 euro per boeking gerekend.
+
+abonnement:
+  korting: 7
+  aanbod: Boek 3 verschillende voorstellingen en ontvang automatisch €7 korting.
+  meermaals: Boekt u elke voorstelling meerdere keren? Dan krijgt u de korting ook meerdere keren.
+  kassa: De korting wordt automatisch verrekend aan de kassa, voordat u uw betaalmethode kiest.
+
+parkeren:
+  prijs: 3
+  kort: >-
+    Inwoners van Hasselt parkeren gratis met het Hasselts Parkeerbudget.
+    Komt u van buiten Hasselt? Reserveer vooraf een parkeerplaats voor 3 euro per avond.
+
+nieuwsbrief:
+  tekst: >-
+    Wil u als eerste op de hoogte zijn van onze voorstellingen? Schrijf u in voor onze
+    nieuwsbrief. We sturen geen spam en delen uw adres nooit met derden.
+  # Inschrijfformulier van SendGrid (Twilio), zelfde formulier als altijd.
+  formulier: https://cdn.forms-content-1.sg-form.com/fc4eee00-8244-11ef-947a-a2d5f2c43330
+
+# Menu. Wat "kort: true" heeft, staat op een groot scherm ook bovenaan in de kop.
+navigatie:
+  - titel: Programma
+    url: /
+    kort: true
+  - titel: Tickets
+    url: /tickets
+  - titel: Praktisch
+    url: /praktisch/
+    kort: true
+  - titel: Over ons
+    url: /over-ons
+    kort: true
+  - titel: Contact
+    url: /contact
+    kort: true
+  - titel: Archief
+    url: /archief
+  - titel: Nieuwsbrief
+    url: /nieuwsbrief
+
+# Volgorde van de links onderaan elke pagina.
+voettekst:
+  - titel: Programma
+    url: /
+  - titel: Tickets
+    url: /tickets
+  - titel: Praktisch
+    url: /praktisch/
+  - titel: Archief
+    url: /archief
+  - titel: Over ons
+    url: /over-ons
+  - titel: Nieuwsbrief
+    url: /nieuwsbrief
+  - titel: Contact
+    url: /contact
+
+# Om datums in het Nederlands te schrijven.
+maanden: [januari, februari, maart, april, mei, juni, juli, augustus, september, oktober, november, december]
+maanden_kort: [jan, feb, mrt, apr, mei, jun, jul, aug, sep, okt, nov, dec]
+dagen: [zondag, maandag, dinsdag, woensdag, donderdag, vrijdag, zaterdag]

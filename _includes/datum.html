@@ -1,0 +1,14 @@
+{%- comment -%}
+  Schrijft een datum in het Nederlands.
+  vorm: "lang" (dinsdag 8 december 2026, standaard), "maand-kort" (dec 2026), "weekdag" (dinsdag)
+  hoofdletter: true voor "Dinsdag 8 december 2026"
+{%- endcomment -%}
+{%- assign _w = include.d | date: "%w" | plus: 0 -%}
+{%- assign _m = include.d | date: "%m" | plus: 0 | minus: 1 -%}
+{%- assign _dag = site.data.reprise.dagen[_w] -%}
+{%- if include.hoofdletter -%}{%- assign _dag = _dag | capitalize -%}{%- endif -%}
+{%- case include.vorm -%}
+{%- when "maand-kort" -%}{{ site.data.reprise.maanden_kort[_m] }} {{ include.d | date: "%Y" }}
+{%- when "weekdag" -%}{{ _dag }}
+{%- else -%}{{ _dag }} {{ include.d | date: "%-d" }} {{ site.data.reprise.maanden[_m] }} {{ include.d | date: "%Y" }}
+{%- endcase -%}

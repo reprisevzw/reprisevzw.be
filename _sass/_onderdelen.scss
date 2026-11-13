@@ -1,0 +1,941 @@
+// Knoppen, links, affiches, kaarten en andere bouwstenen.
+@use "basis" as *;
+
+.icoon {
+  flex: none;
+}
+
+// Knoppen
+.knop {
+  @include kop;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 26px;
+  border: 0;
+  font-size: 21px;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+}
+
+.knop--primair {
+  background: $accent;
+  color: $wit;
+  &:hover {
+    background: $accent-donker;
+    color: $wit;
+  }
+}
+
+.knop--donker {
+  background: $inkt;
+  color: $wit;
+  &:hover {
+    background: #3a2a34;
+    color: $wit;
+  }
+}
+
+.knop--spook {
+  white-space: nowrap;
+  border: 2px solid $inkt;
+  background: $wit;
+  color: $inkt;
+  font-size: 20px;
+  padding: 0 22px;
+  &:hover {
+    background: $vlak;
+    color: $inkt;
+  }
+}
+
+.knop--rand {
+  border: 2px solid $inkt;
+  background: transparent;
+  color: $inkt;
+  &:hover {
+    background: $vlak;
+    color: $inkt;
+  }
+}
+
+.knop--groot {
+  min-height: 60px;
+  padding: 0 34px;
+  font-size: 25px;
+  gap: 12px;
+  @include smal {
+    min-height: 56px;
+    font-size: 23px;
+  }
+}
+
+.knop--klein {
+  min-height: 48px;
+  font-size: 18px;
+}
+
+.knop__extra {
+  font-weight: 600;
+  color: $gedempt;
+}
+
+// Tekstlinks
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-weight: 500;
+  color: $accent;
+  text-underline-offset: 4px;
+}
+
+.link--vet {
+  font-weight: 600;
+}
+
+// Kruimelpad
+.kruimel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  color: $gedempt;
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+// Affiche met datumlabel
+.datumlabel {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 6px;
+  background: $inkt;
+  color: $wit;
+}
+
+.datumlabel__dag {
+  @include kop;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.datumlabel__rest {
+  @include kop(600);
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 0.1em;
+}
+
+.datumlabel__weekdag {
+  color: $datum-zacht;
+}
+
+.affiche {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.affiche__lijst {
+  padding: 8px;
+  background: $inkt;
+  img {
+    width: 100%;
+    aspect-ratio: 800 / 1132;
+    object-fit: cover;
+  }
+}
+
+.affiche--groot {
+  .datumlabel {
+    gap: 14px;
+    padding: 10px 20px 8px;
+  }
+  .datumlabel__dag {
+    font-size: 52px;
+  }
+  .datumlabel__rest {
+    font-size: 18px;
+  }
+  .affiche__lijst {
+    padding: 10px;
+  }
+}
+
+// Middelgrote affiche (seizoenskaarten), ook voor de grote affiche op een gsm
+@mixin affiche-midden {
+  .datumlabel {
+    gap: 12px;
+    padding: 8px 16px 6px;
+  }
+  .datumlabel__dag {
+    font-size: 40px;
+  }
+  .datumlabel__rest {
+    font-size: 16px;
+  }
+  .affiche__lijst {
+    padding: 8px;
+  }
+}
+
+// Kleine affiche op een gsm (lijsten en voorstellingskop)
+@mixin affiche-klein {
+  .datumlabel {
+    gap: 8px;
+    padding: 6px 10px 4px;
+  }
+  .datumlabel__dag {
+    font-size: 30px;
+  }
+  .datumlabel__rest {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+  .affiche__lijst {
+    padding: 6px;
+  }
+}
+
+// Feiten: datum, uur, locatie, prijs
+.feiten {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $lijn;
+  > div {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid $lijn;
+  }
+  dt {
+    @include kop(600);
+    padding-top: 2px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: $gedempt;
+  }
+  dd {
+    font-weight: 500;
+  }
+  .gedempt {
+    font-weight: 400;
+  }
+  @include smal {
+    > div {
+      grid-template-columns: 84px 1fr;
+      gap: 12px;
+      padding: 12px 0;
+    }
+    dt {
+      font-size: 17px;
+      padding-top: 1px;
+    }
+  }
+}
+
+// Prijzen
+.prijstabel {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 19px;
+  caption {
+    @include kop(600);
+    padding-bottom: 8px;
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: $gedempt;
+  }
+  tr {
+    border-bottom: 1px solid $lijn;
+  }
+  tr:first-child {
+    border-top: 2px solid $inkt;
+  }
+  tr:last-child {
+    border-bottom: 2px solid $inkt;
+  }
+  th {
+    padding: 12px 0;
+    text-align: left;
+    font-weight: 500;
+  }
+  td {
+    @include kop;
+    padding: 12px 0;
+    text-align: right;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: none;
+  }
+  .prijstabel__eerste td {
+    font-size: 28px;
+  }
+  @include smal {
+    font-size: 18px;
+    caption {
+      font-size: 17px;
+    }
+    th,
+    td {
+      padding: 10px 0;
+    }
+    td {
+      font-size: 23px;
+    }
+    .prijstabel__eerste td {
+      font-size: 26px;
+    }
+  }
+}
+
+// Secties
+.sectie {
+  padding: 88px 0;
+  @include smal {
+    padding: 48px 0;
+  }
+}
+
+.sectie--lijn {
+  border-top: 1px solid $lijn;
+}
+
+.sectie--compact {
+  padding: 0 0 88px;
+  @include smal {
+    padding: 0 0 48px;
+  }
+}
+
+.sectie__kop {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 48px;
+  @include smal {
+    gap: 4px;
+    margin-bottom: 24px;
+  }
+}
+
+.sectie__titel {
+  @include kop;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  @include smal {
+    font-size: 34px;
+  }
+}
+
+.sectie__titel--groot {
+  font-size: 56px;
+  @include smal {
+    font-size: 38px;
+  }
+}
+
+// Seizoenskaarten
+.kaarten {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 48px;
+  @include smal {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 1px solid $lijn;
+  }
+}
+
+.kaarten--vullen {
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+}
+
+.kaart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include smal {
+    flex-direction: row;
+    gap: 16px;
+    padding: 20px 0;
+    border-top: 1px solid $lijn;
+    .affiche {
+      flex: none;
+      width: 150px;
+    }
+    @include affiche-klein;
+  }
+}
+
+.kaart__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  @include smal {
+    flex: 1 1 auto;
+    padding-top: 38px;
+    font-size: 17px;
+  }
+}
+
+.kaart__titel {
+  @include kop;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
+  @include smal {
+    font-size: 26px;
+  }
+}
+
+.kaart__acties {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-top: 16px;
+  @include smal {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 10px;
+    .knop {
+      min-height: 44px;
+      font-size: 19px;
+    }
+    .link {
+      font-size: 17px;
+    }
+  }
+}
+
+// Kleine weetjes met een icoon (Praktisch)
+.praktisch-kort__raster {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 48px;
+  padding-top: 32px;
+  border-top: 1px solid $lijn;
+  @include smal {
+    gap: 28px;
+    padding-top: 20px;
+  }
+}
+
+.praktisch-kort .sectie__kop {
+  margin-bottom: 40px;
+  @include smal {
+    margin-bottom: 24px;
+  }
+}
+
+.weetje {
+  display: flex;
+  gap: 18px;
+  > .icoon {
+    margin-top: 2px;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .link {
+    align-self: flex-start;
+  }
+  @include smal {
+    gap: 14px;
+    > .icoon {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+.weetje__titel {
+  @include kop;
+  font-size: 26px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  @include smal {
+    font-size: 23px;
+  }
+}
+
+// Abonnementsformule
+.abo-sectie {
+  padding: 88px 0;
+  background: $vlak;
+  @include smal {
+    padding: 40px 0;
+  }
+}
+
+.abo-sectie--compact {
+  padding: 64px 0;
+  @include smal {
+    padding: 40px 0;
+  }
+}
+
+.abo {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $inkt;
+  background: $wit;
+}
+
+.abo__tekst {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 28px 44px;
+  @include smal {
+    gap: 8px;
+    padding: 20px 24px 24px;
+  }
+}
+
+.abo__tekst--breed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+  gap: 24px 56px;
+  padding: 40px 56px 44px;
+  .abo__kop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .abo__titel {
+    font-size: 36px;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+  .abo__uitleg {
+    padding-top: 39px;
+    font-size: inherit;
+  }
+  @include smal {
+    gap: 12px;
+    padding: 20px 24px 24px;
+    .abo__titel {
+      font-size: 26px;
+      line-height: 1.1;
+    }
+    .abo__uitleg {
+      padding-top: 0;
+      font-size: 17px;
+    }
+  }
+}
+
+.abo__titel {
+  @include kop;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  @include smal {
+    font-size: 26px;
+  }
+}
+
+.abo__aanbod {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  @include smal {
+    font-size: 18px;
+  }
+}
+
+.abo__uitleg {
+  color: $tekst-zacht;
+  font-size: 18px;
+  text-wrap: pretty;
+  @include smal {
+    font-size: 17px;
+  }
+}
+
+.abo__som {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 28px 48px;
+  padding: 44px 56px 48px;
+  border-top: 2px dashed $inkt;
+  @include smal {
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px 12px 28px;
+  }
+}
+
+.abo__tickets {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  @include smal {
+    gap: 6px;
+  }
+}
+
+.abo__ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  svg {
+    width: 124px;
+    height: 72px;
+  }
+  @include smal {
+    svg {
+      width: 84px;
+      height: 48px;
+    }
+  }
+}
+
+.abo__naam {
+  @include kop;
+  max-width: 9em;
+  font-size: 19px;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-align: center;
+  @include smal {
+    font-size: 15px;
+  }
+}
+
+.abo__teken {
+  @include kop;
+  padding-bottom: 28px;
+  font-size: 40px;
+  line-height: 1;
+  @include smal {
+    font-size: 24px;
+  }
+}
+
+.abo__uitkomst {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  @include smal {
+    gap: 14px;
+  }
+}
+
+.abo__is {
+  @include kop;
+  font-size: 64px;
+  line-height: 1;
+  @include smal {
+    font-size: 44px;
+  }
+}
+
+.abo__korting {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.abo__bedrag {
+  @include kop;
+  font-size: 180px;
+  line-height: 0.86;
+  letter-spacing: -0.01em;
+  color: $accent;
+  @include smal {
+    font-size: 110px;
+  }
+}
+
+.abo__woord {
+  @include kop;
+  margin-top: 6px;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.1em;
+  @include smal {
+    font-size: 22px;
+  }
+}
+
+// Compacte versie op een voorstellingspagina
+.abo-sectie--compact {
+  .abo__som {
+    gap: 16px 32px;
+    padding: 28px 44px 32px;
+    @include smal {
+      gap: 18px;
+      padding: 24px 12px 28px;
+    }
+  }
+  .abo__tickets {
+    gap: 12px;
+    @include smal {
+      gap: 6px;
+    }
+  }
+  .abo__ticket svg {
+    width: 104px;
+    height: 60px;
+    @include smal {
+      width: 84px;
+      height: 48px;
+    }
+  }
+  .abo__naam {
+    font-size: 17px;
+    @include smal {
+      font-size: 15px;
+    }
+  }
+  .abo__teken {
+    font-size: 32px;
+    @include smal {
+      font-size: 24px;
+    }
+  }
+  .abo__uitkomst {
+    gap: 14px;
+  }
+  .abo__is {
+    font-size: 48px;
+    @include smal {
+      font-size: 44px;
+    }
+  }
+  .abo__bedrag {
+    font-size: 110px;
+  }
+  .abo__woord {
+    font-size: 22px;
+  }
+}
+
+// Nieuwsbrief
+.nieuwsbrief {
+  padding: 72px 0;
+  border-top: 1px solid $lijn;
+  @include smal {
+    padding: 48px 0;
+  }
+}
+
+.nieuwsbrief__raster {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  gap: 32px 48px;
+  align-items: end;
+}
+
+.nieuwsbrief__tekst {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  p {
+    text-wrap: pretty;
+  }
+}
+
+.nieuwsbrief__titel {
+  @include kop;
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  @include smal {
+    font-size: 34px;
+  }
+}
+
+.nieuwsbrief__actie .knop {
+  min-height: 56px;
+  padding: 0 28px;
+  @include smal {
+    width: 100%;
+  }
+}
+
+// Meldingen in een kader (ticketvoorwaarden, geen seizoen)
+.melding {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 28px 36px;
+  border: 2px solid $inkt;
+  background: $wit;
+  > .icoon {
+    margin-top: 2px;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+  }
+  p {
+    max-width: 70ch;
+    font-size: 20px;
+    line-height: 1.55;
+    text-wrap: pretty;
+  }
+  .link {
+    font-size: inherit;
+  }
+  @include smal {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 24px;
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.melding__titel {
+  @include kop;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  @include smal {
+    font-size: 26px;
+  }
+}
+
+// Formulieren
+.formulier {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 720px;
+}
+
+.formulier--kader {
+  padding: 28px 32px 32px;
+  border: 2px solid $inkt;
+  background: $wit;
+  @include smal {
+    padding: 20px 16px;
+  }
+}
+
+.formulier__titel {
+  @include kop;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+}
+
+.formulier__rij {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 20px 24px;
+}
+
+.formulier__stapel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .veld {
+    width: 100%;
+    max-width: 32rem;
+  }
+  @include smal {
+    .veld select {
+      padding: 0 8px;
+      font-size: 17px;
+    }
+  }
+}
+
+.formulier__melding {
+  font-weight: 600;
+  &:empty {
+    display: none;
+  }
+}
+
+.formulier .knop {
+  align-self: flex-start;
+  min-height: 56px;
+  padding: 0 28px;
+  font-size: 22px;
+  @include smal {
+    align-self: stretch;
+  }
+}
+
+.veld {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  label {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    min-height: 56px;
+    padding: 0 16px;
+    border: 2px solid $inkt;
+    border-radius: 0;
+    background: $wit;
+    color: $inkt;
+    font-family: $tekstletter;
+    font-size: 19px;
+    @include smal {
+      min-height: 52px;
+      font-size: 18px;
+    }
+  }
+  select {
+    padding: 0 12px;
+  }
+  textarea {
+    padding: 12px 16px;
+    line-height: 1.5;
+    resize: vertical;
+  }
+  .veld__hulp {
+    margin-top: -4px;
+    font-size: 17px;
+    color: $gedempt;
+  }
+  ::placeholder {
+    color: #6f6069;
+  }
+}

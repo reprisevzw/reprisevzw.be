@@ -1,0 +1,19 @@
+{%- comment -%} Kaart van een komende voorstelling in een seizoensoverzicht. {%- endcomment -%}
+{%- assign _v = include.v -%}
+<article class="kaart" aria-labelledby="kaart-{{ _v.slug }}">
+  {% include affiche.html v=_v maat="middel" %}
+  <div class="kaart__info">
+    <h3 class="kaart__titel" id="kaart-{{ _v.slug }}">{{ _v.title }}</h3>
+    {%- if _v.gezelschap %}
+    <p class="gedempt">{{ _v.gezelschap }}</p>
+    {%- endif %}
+    <p>{{ _v.datum | date: "%H:%M" }}<span class="alleen-breed"> · {{ site.data.reprise.locatie.naam }} {{ site.data.reprise.locatie.gemeente }}</span>
+      {%- if _v.prijzen.standaard %} · <strong>{% include prijs.html bedrag=_v.prijzen.standaard %}</strong>{% endif %}</p>
+    <div class="kaart__acties">
+      {%- if _v.tickets %}
+      <a class="knop knop--primair" href="{{ _v.tickets }}">Tickets<span class="sr"> voor {{ _v.title }}</span></a>
+      {%- endif %}
+      <a class="link" href="{{ _v.url | relative_url }}">Meer info<span class="sr"> over {{ _v.title }}</span></a>
+    </div>
+  </div>
+</article>

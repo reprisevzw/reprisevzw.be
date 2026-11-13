@@ -1,0 +1,15 @@
+{%- comment -%} Affiche met het datumlabel erboven. maat: groot, middel of klein. {%- endcomment -%}
+{%- assign _v = include.v -%}
+<figure class="affiche affiche--{{ include.maat | default: 'middel' }}">
+  <p class="datumlabel">
+    <span class="datumlabel__dag" aria-hidden="true">{{ _v.datum | date: "%-d" }}</span>
+    <span class="datumlabel__rest" aria-hidden="true">
+      <span>{% include datum.html d=_v.datum vorm="maand-kort" %}</span>
+      <span class="datumlabel__weekdag">{% include datum.html d=_v.datum vorm="weekdag" %}</span>
+    </span>
+    <span class="sr">{% include datum.html d=_v.datum %}</span>
+  </p>
+  <div class="affiche__lijst">
+    <img src="{{ _v.affiche | relative_url }}" alt="Affiche {{ _v.title }}" width="800" height="1132"{% unless include.direct %} loading="lazy"{% endunless %} decoding="async">
+  </div>
+</figure>

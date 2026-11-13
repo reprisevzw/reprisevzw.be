@@ -1,0 +1,45 @@
+{%- comment -%}
+  Abonnementsformule met drie tickets. Verschijnt alleen als er minstens drie
+  komende voorstellingen zijn (eerst voorstellingen.html includen).
+  compact: true voor de kleinere versie op een voorstellingspagina.
+{%- endcomment -%}
+{%- if komende.size >= 3 -%}
+{%- assign _a = site.data.reprise.abonnement -%}
+{%- assign _drie = komende | slice: 0, 3 -%}
+<section class="abo-sectie{% if include.compact %} abo-sectie--compact{% endif %}" aria-labelledby="abo-titel">
+  <div class="houder">
+    <div class="abo">
+      {%- if include.compact %}
+      <div class="abo__tekst">
+        <h2 id="abo-titel" class="abo__titel">Abonnementsformule</h2>
+        <p class="abo__aanbod">{{ _a.aanbod }}</p>
+        <p class="abo__uitleg">{{ _a.kassa }}</p>
+      </div>
+      {%- else %}
+      <div class="abo__tekst abo__tekst--breed">
+        <div class="abo__kop">
+          <p class="bovenlabel">Abonnementsformule</p>
+          <h2 id="abo-titel" class="abo__titel">{{ _a.aanbod }}</h2>
+        </div>
+        <p class="abo__uitleg">{{ _a.meermaals }} {{ _a.kassa }}</p>
+      </div>
+      {%- endif %}
+      <div class="abo__som" role="img" aria-label="Drie tickets, voor {{ _drie[0].title }}, {{ _drie[1].title }} en {{ _drie[2].title }}, geven samen €{{ _a.korting }} korting">
+        <div class="abo__tickets">
+          {%- for v in _drie %}
+          {%- unless forloop.first %}<span class="abo__teken" aria-hidden="true">+</span>{% endunless %}
+          <div class="abo__ticket">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 104 60" fill="#f3e3ea" stroke="#953d62" stroke-width="2.5" stroke-linejoin="round"><path d="M2 2 H26 A6 6 0 0 0 38 2 H102 V58 H38 A6 6 0 0 0 26 58 H2 Z"/><path d="M32 12 V48" fill="none" stroke-dasharray="4 4"/><text x="70" y="40" text-anchor="middle" fill="#953d62" stroke="none" font-family="Barlow Condensed, sans-serif" font-weight="700" font-size="28">{{ forloop.index }}</text></svg>
+            <span class="abo__naam">{{ v.title }}</span>
+          </div>
+          {%- endfor %}
+        </div>
+        <div class="abo__uitkomst">
+          <span class="abo__is" aria-hidden="true">=</span>
+          <span class="abo__korting"><span class="abo__bedrag">€{{ _a.korting }}</span><span class="abo__woord">korting</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{%- endif -%}

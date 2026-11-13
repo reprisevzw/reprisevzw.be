@@ -1,0 +1,38 @@
+---
+# SJABLOON VOOR EEN NIEUWE VOORSTELLING
+# Kopieer dit bestand naar bv. _voorstellingen/de-titel-van-het-stuk.md
+# (kleine letters, woorden gescheiden door streepjes). Die naam wordt het
+# webadres: reprisevzw.be/voorstellingen/de-titel-van-het-stuk
+# Regels die met # beginnen zijn uitleg; die mag u laten staan of wissen.
+
+title: De Titel Van Het Stuk
+gezelschap: Naam van het gezelschap            # mag weg als het niet gekend is
+
+# Datum en uur van de voorstelling (uur in Belgische tijd): JJJJ-MM-DD UU:MM
+datum: 2027-10-14 20:00
+
+# Affiche: zet de afbeelding (staand, ongeveer 800 x 1132 pixels, .webp of .jpg)
+# in assets/images/voorstellingen/de-titel-van-het-stuk/
+affiche: /assets/images/voorstellingen/de-titel-van-het-stuk/de-titel-van-het-stuk-800px.webp
+
+# Eén zin voor bovenaan de startpagina en voor sociale media. Mag weg.
+kort: Een komedie die u niet mag missen.
+
+# Link naar de ticketverkoop
+tickets: https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/...
+
+# Prijzen in euro, zonder euroteken
+prijzen:
+  standaard: 28
+  groep10: 27        # groep vanaf 10 personen
+  groep20: 26        # groep vanaf 20 personen
+
+# De cast. "bekend_van" mag weg.
+cast:
+  - naam: Voornaam Achternaam
+    bekend_van: Thuis
+  - naam: Nog Iemand
+---
+Hier komt het verhaal, gewoon als tekst. Laat een lege regel tussen twee alinea's.
+
+'De Titel Van Het Stuk' is geschreven door ...

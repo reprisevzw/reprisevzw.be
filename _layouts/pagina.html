@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section class="pagina-kop" aria-labelledby="pagina-titel">
+  <div class="houder">
+    {%- if page.bovenlabel %}<p class="bovenlabel">{{ page.bovenlabel }}</p>{% endif %}
+    <h1 id="pagina-titel" class="pagina-kop__titel">{{ page.title }}</h1>
+    {%- if page.intro %}<p class="pagina-kop__intro">{{ page.intro }}</p>{% endif %}
+  </div>
+</section>
+<div class="sectie sectie--tekst">
+  <div class="houder">
+    <div class="tekst">
+{{ content }}
+    </div>
+  </div>
+</div>
