@@ -11,11 +11,11 @@ cast:
   - naam: Linda De Ridder
   - naam: Brik Van Dyck
 ---
-een FIRST CLASS komedie van Brik Van Dyck en Sven De Ridder
+Een FIRST CLASS komedie van Brik Van Dyck en Sven De Ridder
 
-DEVLIEGHER AIRLINES is een sympathiek familiebedrijf met enthousiast personeel, maar als Nadia (Kristel Verbeke) de leiding overneemt van haar bejaarde vader blijft er van de  gezellige werksfeer plots niks meer over.
+DEVLIEGHER AIRLINES is een sympathiek familiebedrijf met enthousiast personeel, maar als Nadia (Kristel Verbeke) de leiding overneemt van haar bejaarde vader, blijft er van de gezellige werksfeer plots niks meer over.
 
-Wanneer de kleine vliegmaatschappij dan ook nog eens dreigt te worden opgeslorpt door een grote  buitenlandse speler, legt het personeel ten einde raad het werk neer.
+Wanneer de kleine vliegmaatschappij dan ook nog eens dreigt te worden opgeslorpt door een grote buitenlandse speler, legt het personeel ten einde raad het werk neer.
 
 Overleeft Devliegher Airlines de staking of gaat het roemloos ten onder?
 

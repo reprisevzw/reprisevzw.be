@@ -4,10 +4,10 @@ permalink: /contact
 ---
 
 <p>
-Heb je vragen? Dan kan je ons het best contacteren&nbsp;
+Hebt u vragen? Dan contacteert u ons het best&nbsp;
 {%- assign _author = site.author -%}
-<a href="mailto:{{ _author.email | encode_email }}" title="Mail ons">via email</a>
-of gebruik het onderstaande formulier:
+<a href="mailto:{{ _author.email | encode_email }}" title="Mail ons">via e-mail</a>
+of met het formulier hieronder:
 </p>
 
 <form id="contactForm" class="formulier formulier--kader" action="https://backend.veemax.be/fn/reprise-contactform" method="POST">
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Check if hCaptcha is completed
     if (!hCaptchaResponse) {
-      alert('Gelieve de hCaptcha verificatie te voltooien.');
+      alert('Gelieve de hCaptcha-verificatie te voltooien.');
       return;
     }
 

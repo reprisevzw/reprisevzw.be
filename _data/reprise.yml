@@ -14,7 +14,7 @@ locatie:
 
 ticketvoorwaarden: >-
   Tickets zijn niet omruilbaar, annuleerbaar of terugbetaalbaar.
-  Er wordt een reservatiekost van 2 euro per boeking gerekend.
+  Er wordt een reservatiekost van €2 per boeking gerekend.
 
 abonnement:
   korting: 7
@@ -26,7 +26,7 @@ parkeren:
   prijs: 3
   kort: >-
     Inwoners van Hasselt parkeren gratis met het Hasselts Parkeerbudget.
-    Komt u van buiten Hasselt? Reserveer vooraf een parkeerplaats voor 3 euro per avond.
+    Komt u van buiten Hasselt? Reserveer vooraf een parkeerplaats voor €3 per avond.
 
 nieuwsbrief:
   tekst: >-
