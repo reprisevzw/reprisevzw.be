@@ -1,0 +1,51 @@
+---
+title: Archief
+permalink: /archief
+layout: default
+description: Alle voorstellingen die Reprise vzw sinds 2023 naar Hasselt bracht.
+---
+{%- include voorstellingen.html -%}
+<section class="pagina-kop pagina-kop--met-kruimel" aria-labelledby="pagina-titel">
+  <div class="houder">
+    <nav class="kruimel" aria-label="Kruimelpad">
+      <a href="{{ '/' | relative_url }}">Programma</a>
+      {% include icoon/chevron.html %}
+      <span aria-current="page">Archief</span>
+    </nav>
+    <h1 id="pagina-titel" class="pagina-kop__titel">Archief</h1>
+    <p class="pagina-kop__intro">Alle voorstellingen die we sinds 2023 naar Hasselt brachten.</p>
+  </div>
+</section>
+<div class="archief">
+  <div class="houder">
+    <div class="archief__lijst">
+      {%- assign huidig = "" -%}
+      {%- for v in voorbij -%}
+      {%- capture s %}{% include seizoen.html d=v.datum %}{% endcapture -%}
+      {%- if s != huidig -%}
+        {%- unless forloop.first %}
+        </ul>
+      </section>
+        {%- endunless %}
+      <section class="archief__seizoen" aria-labelledby="seizoen-{{ s | slice: 0, 4 }}">
+        <h2 id="seizoen-{{ s | slice: 0, 4 }}" class="archief__kop"><span class="bovenlabel">Seizoen</span> <span class="archief__jaren">{{ s }}</span></h2>
+        <ul class="archief__kaarten">
+        {%- assign huidig = s -%}
+      {%- endif %}
+          <li>
+            <a class="archiefkaart" href="{{ v.url | relative_url }}">
+              {% include affiche.html v=v maat="middel" %}
+              <span class="archiefkaart__titel">{{ v.title }}</span>
+            </a>
+          </li>
+      {%- if forloop.last %}
+        </ul>
+      </section>
+      {%- endif -%}
+      {%- endfor %}
+      {%- if voorbij.size == 0 %}
+      <p>Nog geen voorbije voorstellingen.</p>
+      {%- endif %}
+    </div>
+  </div>
+</div>

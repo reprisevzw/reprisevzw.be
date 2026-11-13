@@ -1,0 +1,25 @@
+{%- assign _l = site.data.reprise.locatie -%}
+<footer class="voet">
+  <div class="houder">
+    <div class="voet__raster">
+      <div class="voet__over">
+        <img src="{{ '/assets/images/logo/reprise_hor_color_large.svg' | relative_url }}" alt="Reprise vzw" width="142" height="56" loading="lazy">
+        <p>{{ site.data.reprise.slogan }}</p>
+      </div>
+      <div class="voet__adres">
+        <p class="bovenlabel">Adres</p>
+        <p>{{ _l.naam }}, {{ _l.straat }}<br>{{ _l.postcode }} {{ _l.gemeente }}</p>
+        <a class="link" href="mailto:{{ site.author.email | encode_email }}">{{ site.author.email }}</a>
+      </div>
+      <nav class="voet__nav" id="snel-naar" aria-label="Voettekst">
+        <p class="bovenlabel">Snel naar</p>
+        <ul>
+          {%- for item in site.data.reprise.voettekst %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.titel }}</a></li>
+          {%- endfor %}
+        </ul>
+      </nav>
+    </div>
+    <p class="voet__copy">© {{ site.time | date: "%Y" }} Reprise vzw</p>
+  </div>
+</footer>

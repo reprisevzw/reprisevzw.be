@@ -1,0 +1,56 @@
+---
+layout: default
+redirect_from:
+  - /voorstellingen
+---
+{%- include voorstellingen.html -%}
+{%- if komende.size > 0 -%}
+{%- assign s = komende[0] -%}
+<section class="spot" aria-labelledby="spot-titel">
+  <div class="houder spot__raster">
+    <p class="bovenlabel spot__label">Eerstvolgende voorstelling</p>
+    {% include affiche.html v=s maat="groot" direct=true %}
+    <div class="spot__tekst">
+      <div class="spot__titels">
+        <h1 id="spot-titel" class="titel-xl">{{ s.title }}</h1>
+        {%- if s.gezelschap %}<p class="gedempt">{{ s.gezelschap }}</p>{% endif %}
+      </div>
+      {%- if s.kort %}
+      <p class="spot__kort">{{ s.kort }}</p>
+      {%- else %}
+      <p class="spot__kort">{{ s.excerpt | strip_html | truncatewords: 22, "…" }}</p>
+      {%- endif %}
+      {% include feiten.html v=s prijs=true %}
+      <div class="spot__acties">
+        {%- if s.tickets %}
+        <a class="knop knop--primair knop--groot" href="{{ s.tickets }}">Koop tickets {% include icoon/pijl.html maat=22 %}</a>
+        {%- endif %}
+        <a class="link" href="{{ s.url | relative_url }}">Meer over deze voorstelling</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sectie sectie--lijn seizoen" aria-labelledby="seizoen-titel">
+  <div class="houder">
+    <div class="sectie__kop">
+      <p class="bovenlabel">Programma</p>
+      <h2 id="seizoen-titel" class="sectie__titel sectie__titel--groot">Seizoen {% include seizoen.html d=s.datum %}</h2>
+    </div>
+    <div class="kaarten">
+      {%- for v in komende %}
+      {% include kaart.html v=v %}
+      {%- endfor %}
+    </div>
+    <a class="link link--pijl seizoen__archief" href="{{ '/archief' | relative_url }}">Bekijk het archief {% include icoon/pijl.html %}</a>
+  </div>
+</section>
+
+{% include abonnement.html %}
+{% include praktisch-kort.html bovenlabel=true %}
+{% include nieuwsbrief.html %}
+{%- else -%}
+<h1 class="sr">Reprise vzw</h1>
+{% include geen-seizoen.html %}
+{% include praktisch-kort.html bovenlabel=true %}
+{%- endif -%}

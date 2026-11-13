@@ -1,0 +1,93 @@
+---
+layout: default
+---
+{%- include voorstellingen.html -%}
+{%- assign v = page -%}
+{%- assign vandaag = site.time | date: "%Y%m%d" | plus: 0 -%}
+{%- assign dag = v.datum | date: "%Y%m%d" | plus: 0 -%}
+{%- if dag >= vandaag %}{% assign komt = true %}{% else %}{% assign komt = false %}{% endif -%}
+<section class="voorstelling-kop" aria-labelledby="voorstelling-titel">
+  <div class="houder">
+    <nav class="kruimel" aria-label="Kruimelpad">
+      {%- if komt %}
+      <a href="{{ '/' | relative_url }}">Programma</a>
+      {%- else %}
+      <a href="{{ '/archief' | relative_url }}">Archief</a>
+      {%- endif %}
+      {% include icoon/chevron.html %}
+      <span aria-current="page">{{ v.title }}</span>
+    </nav>
+    <div class="voorstelling-kop__raster">
+      {% include affiche.html v=v maat="groot" direct=true %}
+      <div class="voorstelling-kop__titels">
+        <p class="bovenlabel">Seizoen {% include seizoen.html d=v.datum %}</p>
+        <h1 id="voorstelling-titel" class="titel-xl">{{ v.title }}</h1>
+        {%- if v.gezelschap %}<p class="gedempt">{{ v.gezelschap }}</p>{% endif %}
+      </div>
+      <div class="voorstelling-kop__info">
+        {% include feiten.html v=v %}
+        {%- if komt %}
+        {%- if v.prijzen %}
+        <div class="voorstelling-kop__prijzen">{% include prijstabel.html v=v %}</div>
+        {%- endif %}
+        <div class="voorstelling-kop__acties">
+          {%- if v.tickets %}
+          <a class="knop knop--primair knop--groot" href="{{ v.tickets }}">Koop tickets {% include icoon/pijl.html maat=22 %}</a>
+          {%- endif %}
+          {% include parkeerknop.html v=v %}
+        </div>
+        <p class="voorstelling-kop__voorwaarden">{{ site.data.reprise.ticketvoorwaarden }}</p>
+        {%- else %}
+        <div class="voorbij">
+          <p class="voorbij__tekst">Deze voorstelling is voorbij.</p>
+          <a class="link link--pijl" href="{{ '/' | relative_url }}">Bekijk het programma {% include icoon/pijl.html %}</a>
+        </div>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sectie verhaal" aria-labelledby="verhaal-titel">
+  <div class="houder verhaal__raster{% unless v.cast %} verhaal__raster--alleen{% endunless %}">
+    <div class="verhaal__tekst">
+      <h2 id="verhaal-titel" class="sectie__titel">Het verhaal</h2>
+      <div class="tekst tekst--groot">
+{{ content }}
+      </div>
+    </div>
+    {%- if v.cast %}
+    <div class="verhaal__cast">
+      <h2 class="sectie__titel">Met</h2>
+      <ul class="cast">
+        {%- for lid in v.cast %}
+        <li><span class="cast__naam">{{ lid.naam }}</span>{% if lid.bekend_van %} <span class="cast__bekend">bekend van {{ lid.bekend_van }}</span>{% endif %}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+  </div>
+</section>
+
+{%- if komt %}
+{% include abonnement.html compact=true %}
+{% include praktisch-kort.html v=v %}
+{%- endif %}
+
+{%- assign anderen = "" | split: "" -%}
+{%- for k in komende -%}{%- if k.slug != v.slug -%}{%- assign anderen = anderen | push: k -%}{%- endif -%}{%- endfor %}
+<section class="sectie sectie--lijn ook" aria-labelledby="ook-titel">
+  <div class="houder">
+    <h2 id="ook-titel" class="sectie__titel">{% if komt %}Ook dit seizoen{% else %}Nu op het programma{% endif %}</h2>
+    <div class="kaarten kaarten--vullen">
+      {%- for k in anderen %}
+      {% include kaart.html v=k %}
+      {%- endfor %}
+      <div class="ook__archief">
+        {%- if anderen.size == 0 %}<p class="gedempt">{% if komt %}Dit is de laatste voorstelling van het seizoen.{% else %}Het nieuwe seizoen wordt binnenkort aangekondigd.{% endif %}</p>{% endif %}
+        <p class="gedempt">Benieuwd wat we eerder naar Hasselt brachten?</p>
+        <a class="link link--pijl" href="{{ '/archief' | relative_url }}">Bekijk het archief {% include icoon/pijl.html %}</a>
+      </div>
+    </div>
+  </div>
+</section>

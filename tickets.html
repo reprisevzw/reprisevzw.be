@@ -1,0 +1,69 @@
+---
+title: Tickets
+permalink: /tickets
+layout: default
+---
+{%- include voorstellingen.html -%}
+{%- assign _l = site.data.reprise.locatie -%}
+{%- assign eerste = komende.first -%}
+<section class="pagina-kop" aria-labelledby="pagina-titel">
+  <div class="houder">
+    <h1 id="pagina-titel" class="pagina-kop__titel">Tickets</h1>
+    {%- if komende.size > 0 %}
+    <p class="pagina-kop__intro">Seizoen {% include seizoen.html d=eerste.datum %}, alle voorstellingen in {{ _l.naam }} {{ _l.gemeente }} om {{ _l.aanvang }}.</p>
+    {%- endif %}
+  </div>
+</section>
+
+{%- if komende.size > 0 %}
+<section class="ticketlijst" aria-label="Voorstellingen seizoen {% include seizoen.html d=eerste.datum %}">
+  <div class="houder">
+    <div class="ticketlijst__lijst">
+      {%- for v in komende %}
+      <article class="ticketrij" aria-labelledby="tk-{{ v.slug }}">
+        {% include affiche.html v=v maat="middel" %}
+        <div class="ticketrij__inhoud">
+          <div class="ticketrij__info">
+            <h2 id="tk-{{ v.slug }}" class="ticketrij__titel">{{ v.title }}</h2>
+            {%- if v.gezelschap %}<p class="gedempt">{{ v.gezelschap }}</p>{% endif %}
+            <p class="ticketrij__wanneer">{% include datum.html d=v.datum hoofdletter=true %}, {{ v.datum | date: "%H:%M" }}</p>
+            <p>{{ _l.naam }}, {{ _l.straat }}, {{ _l.gemeente }}</p>
+            <a class="link link--pijl" href="{{ v.url | relative_url }}">Meer over deze voorstelling<span class="sr"> {{ v.title }}</span> {% include icoon/pijl.html %}</a>
+          </div>
+          <div class="ticketrij__kopen">
+            {%- if v.prijzen %}{% include prijstabel.html v=v %}{% endif %}
+            {%- if v.tickets %}
+            <a class="knop knop--primair knop--groot" href="{{ v.tickets }}">Koop tickets<span class="sr"> voor {{ v.title }}</span> {% include icoon/pijl.html maat=22 %}</a>
+            {%- endif %}
+            {% include parkeerknop.html v=v klein=true %}
+          </div>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sectie sectie--compact" aria-labelledby="voorwaarden-titel">
+  <div class="houder">
+    <div class="melding">
+      {% include icoon/info.html %}
+      <div>
+        <h2 id="voorwaarden-titel" class="melding__titel">Ticketvoorwaarden</h2>
+        <p>{{ site.data.reprise.ticketvoorwaarden }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include abonnement.html %}
+{%- else %}
+{% include geen-seizoen.html %}
+{%- endif %}
+
+<section class="sectie vragen" aria-labelledby="vragen-titel">
+  <div class="houder vragen__binnen">
+    <h2 id="vragen-titel" class="vragen__titel">Vragen over uw bestelling?</h2>
+    <p>Mail ons op <a class="link link--vet" href="mailto:{{ site.author.email | encode_email }}">{{ site.author.email }}</a></p>
+  </div>
+</section>

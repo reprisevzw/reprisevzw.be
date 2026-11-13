@@ -1,0 +1,13 @@
+{%- assign _v = include.v -%}
+{%- assign _l = site.data.reprise.locatie -%}
+<dl class="feiten">
+  <div><dt>Datum</dt><dd>{% include datum.html d=_v.datum hoofdletter=true %}</dd></div>
+  <div><dt>Uur</dt><dd>{{ _v.datum | date: "%H:%M" }}</dd></div>
+  <div><dt>Locatie</dt><dd>{{ _l.naam }}, {{ _l.straat }}, {{ _l.postcode }} {{ _l.gemeente }}</dd></div>
+  {%- if include.prijs and _v.prijzen.standaard %}
+  <div><dt>Prijs</dt><dd>{% include prijs.html bedrag=_v.prijzen.standaard %}
+    {%- assign _groep = _v.prijzen.groep20 | default: _v.prijzen.groep10 -%}
+    {%- if _groep %} <span class="gedempt">· groepen vanaf {% include prijs.html bedrag=_groep %}</span>{% endif -%}
+  </dd></div>
+  {%- endif %}
+</dl>

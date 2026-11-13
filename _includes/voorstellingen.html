@@ -1,0 +1,29 @@
+{%- comment -%}
+  Deelt alle voorstellingen in. Na deze include bestaan:
+  - komende: voorstellingen op of na de dag van de build, vroegste eerst
+  - voorbij: voorstellingen voor de dag van de build, laatste eerst
+  We sorteren op een sleutel "JJJJMMDDUUMM|slug", zodat het niet uitmaakt of
+  "datum" als tekst of als tijdstip uit de YAML komt.
+{%- endcomment -%}
+{%- assign vandaag = site.time | date: "%Y%m%d" | plus: 0 -%}
+{%- assign sleutels = "" | split: "" -%}
+{%- for v in site.voorstellingen -%}
+  {%- capture sleutel -%}{{ v.datum | date: "%Y%m%d%H%M" }}|{{ v.slug }}{%- endcapture -%}
+  {%- assign sleutels = sleutels | push: sleutel -%}
+{%- endfor -%}
+{%- assign sleutels = sleutels | sort -%}
+{%- assign komende = "" | split: "" -%}
+{%- assign voorbij = "" | split: "" -%}
+{%- for sleutel in sleutels -%}
+  {%- assign delen = sleutel | split: "|" -%}
+  {%- assign dag = delen[0] | slice: 0, 8 | plus: 0 -%}
+  {%- for v in site.voorstellingen -%}
+    {%- if v.slug == delen[1] -%}
+      {%- if dag >= vandaag -%}
+        {%- assign komende = komende | push: v -%}
+      {%- else -%}
+        {%- assign voorbij = voorbij | unshift: v -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}

@@ -1,0 +1,15 @@
+{%- assign _p = include.v.prijzen -%}
+<table class="prijstabel">
+  <caption>Prijzen per ticket</caption>
+  <tbody>
+    {%- if _p.standaard %}
+    <tr class="prijstabel__eerste"><th scope="row">Standaard</th><td>{% include prijs.html bedrag=_p.standaard %}</td></tr>
+    {%- endif -%}
+    {%- if _p.groep10 %}
+    <tr><th scope="row">Groep vanaf 10 personen</th><td>{% include prijs.html bedrag=_p.groep10 %}</td></tr>
+    {%- endif -%}
+    {%- if _p.groep20 %}
+    <tr><th scope="row">Groep vanaf 20 personen</th><td>{% include prijs.html bedrag=_p.groep20 %}</td></tr>
+    {%- endif %}
+  </tbody>
+</table>

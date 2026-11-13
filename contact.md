@@ -1,11 +1,6 @@
 ---
-layout: article
 title: Contact
 permalink: /contact
-article_header:
-  type: cover
-  image:
-    src: /assets/images/reprise/header_reducedheight_3.webp
 ---
 
 <p>
@@ -15,41 +10,28 @@ Heb je vragen? Dan kan je ons het best contacteren&nbsp;
 of gebruik het onderstaande formulier:
 </p>
 
-
-<div class="grid cell cell--auto" style="border:1px solid #333">
-<div class="m-3" style="width: 100%">
-<form id="contactForm" action="https://backend.veemax.be/fn/reprise-contactform" method="POST" style="width: 100%">
-  <div class="form-group mt-4 mb-4">
-    <div>
-      <label for="inputName">Volledige naam:</label>
-    </div>
-    <div style="width: 100%">
-      <input type="text" style="width: 100%" name="name" class="form-control" id="inputName" placeholder="Vul hier uw naam in" required="required">
-    </div>
+<form id="contactForm" class="formulier formulier--kader" action="https://backend.veemax.be/fn/reprise-contactform" method="POST">
+  <div class="veld">
+    <label for="inputName">Volledige naam</label>
+    <input type="text" name="name" id="inputName" autocomplete="name" placeholder="Vul hier uw naam in" required="required">
   </div>
-  <div class="form-group mt-4 mb-4">
-    <label for="inputEmail" required="required">Email adres:</label>
-    <div>
-    <input type="email" name="email"
-      class="form-control" style="width: 100%" id="inputEmail" aria-describedby="emailHelp" placeholder="Vul hier uw email adres in">
-    </div>
+  <div class="veld">
+    <label for="inputEmail">E-mailadres</label>
+    <input type="email" name="email" id="inputEmail" autocomplete="email" placeholder="Vul hier uw e-mailadres in">
   </div>
-  <div class="form-group mt-4 mb-4">
-    <label for="inputMessage" required="required">Uw bericht:</label>
-    <div>
-    <textarea type="text" name="message" style="width: 100%"
-      class="form-control" id="inputMessage" placeholder="Vul hier uw bericht in"></textarea>
-    </div>
+  <div class="veld">
+    <label for="inputMessage">Uw bericht</label>
+    <textarea name="message" id="inputMessage" rows="6" placeholder="Vul hier uw bericht in"></textarea>
   </div>
   <!-- add hidden Honeypot input to prevent spams -->
   <input type="hidden" name="_gotcha" style="display:none !important">
   <!-- hCaptcha widget -->
-  <div class="form-group mt-4 mb-4">
+  <div class="veld">
     <div class="h-captcha" data-sitekey="84e033b6-509e-41b4-800a-b23cf290df94"></div>
   </div>
-  <button id="submitButton" type="button" class="button button--primary button--rounded button--lg">Verstuur!</button>
+  <button id="submitButton" type="button" class="knop knop--primair">Verstuur!</button>
 </form>
-<div id="reponse"></div>
+<div id="reponse" role="status" aria-live="polite"></div>
 
 <!-- hCaptcha script -->
 <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
@@ -171,5 +153,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-</div>
-</div>
