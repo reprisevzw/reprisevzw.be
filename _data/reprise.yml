@@ -32,8 +32,19 @@ nieuwsbrief:
   tekst: >-
     Wil u als eerste op de hoogte zijn van onze voorstellingen? Schrijf u in voor onze
     nieuwsbrief. We sturen geen spam en delen uw adres nooit met derden.
-  # Inschrijfformulier van SendGrid (Twilio), zelfde formulier als altijd.
-  formulier: https://cdn.forms-content-1.sg-form.com/fc4eee00-8244-11ef-947a-a2d5f2c43330
+  # Inschrijven gebeurt bij onze eigen listmonk, op de publieke lijst hieronder
+  # (dubbele opt-in: wie zich inschrijft, krijgt eerst een bevestigingsmail).
+  listmonk: https://listmonk.veemax.be
+  lijst: eff6a931-28b3-4db5-a4ed-aa366d1b5f40
+
+# Gegevens voor de privacyverklaring (/privacy) en de voettekst.
+privacy:
+  naam: Reprise vzw
+  zetel: Carnegielaan 14, 3500 Hasselt
+  ondernemingsnummer: 0805.648.247
+  rpr: RPR Antwerpen, afdeling Hasselt
+  bewaartermijn_contact: twee jaar na uw laatste bericht
+  bijgewerkt: 13 november 2026
 
 # Menu. Wat "kort: true" heeft, staat op een groot scherm ook bovenaan in de kop.
 navigatie:
@@ -72,6 +83,8 @@ voettekst:
     url: /nieuwsbrief
   - titel: Contact
     url: /contact
+  - titel: Privacy
+    url: /privacy
 
 # Om datums in het Nederlands te schrijven.
 maanden: [januari, februari, maart, april, mei, juni, juli, augustus, september, oktober, november, december]

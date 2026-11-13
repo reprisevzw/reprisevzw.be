@@ -1,7 +1,3 @@
-{%- comment -%}
-  Inschrijven op de nieuwsbrief gebeurt met het formulier van SendGrid op de
-  pagina /nieuwsbrief (zelfde manier als altijd). Dit blok verwijst daarheen.
-{%- endcomment -%}
 <section class="sectie nieuwsbrief" aria-labelledby="nieuwsbrief-titel">
   <div class="houder nieuwsbrief__raster">
     <div class="nieuwsbrief__tekst">
@@ -9,7 +5,7 @@
       <p>{{ site.data.reprise.nieuwsbrief.tekst }}</p>
     </div>
     <div class="nieuwsbrief__actie">
-      <a class="knop knop--donker" href="{{ '/nieuwsbrief' | relative_url }}">Inschrijven {% include icoon/pijl.html maat=20 %}</a>
+      {% include nieuwsbrief-formulier.html id="nb-blok" %}
     </div>
   </div>
 </section>

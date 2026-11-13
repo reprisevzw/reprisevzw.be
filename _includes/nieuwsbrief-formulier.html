@@ -1,0 +1,26 @@
+{%- comment -%}
+  Inschrijfformulier voor de nieuwsbrief. Het formulier post rechtstreeks naar
+  onze listmonk, die daarna zelf de bedankpagina toont en de bevestigingsmail
+  stuurt. Parameter: id (uniek voorvoegsel voor de velden op de pagina).
+{%- endcomment -%}
+{%- assign _n = site.data.reprise.nieuwsbrief -%}
+{%- assign _id = include.id | default: "nb" -%}
+<form class="formulier nieuwsbrief-form" method="post" action="{{ _n.listmonk }}/subscription/form">
+  <input type="hidden" name="l" value="{{ _n.lijst }}">
+  <div class="nieuwsbrief-form__lokaas" aria-hidden="true">
+    <label for="{{ _id }}-nonce">Laat dit veld leeg</label>
+    <input id="{{ _id }}-nonce" name="nonce" type="text" tabindex="-1" autocomplete="off">
+  </div>
+  <div class="veld">
+    <label for="{{ _id }}-email">Uw e-mailadres</label>
+    <input id="{{ _id }}-email" name="email" type="email" autocomplete="email" placeholder="naam@voorbeeld.be" required>
+  </div>
+  {%- if include.naam %}
+  <div class="veld">
+    <label for="{{ _id }}-naam">Uw naam <span class="veld__optioneel">(niet verplicht)</span></label>
+    <input id="{{ _id }}-naam" name="name" type="text" autocomplete="name">
+  </div>
+  {%- endif %}
+  <button class="knop knop--donker" type="submit">Inschrijven {% include icoon/pijl.html maat=20 %}</button>
+  <p class="nieuwsbrief-form__privacy">U krijgt eerst een e-mail om uw inschrijving te bevestigen. Uitschrijven kan altijd. Lees ook onze <a href="{{ '/privacy' | relative_url }}">privacyverklaring</a>.</p>
+</form>
