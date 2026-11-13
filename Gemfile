@@ -1,6 +1,11 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gem 'jekyll-email-protect'
+gem "jekyll", "~> 4.4"
 
-gemspec
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+  gem "jekyll-redirect-from"
+  gem "jekyll-email-protect"
+end
