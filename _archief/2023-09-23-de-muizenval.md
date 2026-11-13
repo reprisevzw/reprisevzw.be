@@ -12,7 +12,7 @@ toc: false
 
 <!--more-->
 
-![de-muizenval-header]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
+![Affiche De Muizenval]({{ site.baseurl }}/assets/images/voorstellingen/de-muizenval/de-muizenval-webheader-1540x371.webp){:class="img-responsive"}
 
 Laat je meeslepen in het bloedstollende moordverhaal van Agatha Christie.
 

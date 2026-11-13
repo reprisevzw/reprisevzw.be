@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-[![de-jacht-is-open-header]({{ site.baseurl }}/assets/images/voorstellingen/de-jacht-is-open/de-jacht-is-open-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-jacht-is-open/de-jacht-is-open-800px.webp)
+[![Affiche De Jacht Is Open]({{ site.baseurl }}/assets/images/voorstellingen/de-jacht-is-open/de-jacht-is-open-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-jacht-is-open/de-jacht-is-open-800px.webp)
 
 ### Donderdag 5 November 2026, CCHA Hasselt, 20:00
 

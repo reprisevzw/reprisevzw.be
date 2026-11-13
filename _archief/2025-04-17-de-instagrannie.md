@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-[![de-instagrannie-header]({{ site.baseurl }}/assets/images/voorstellingen/de-instagrannie/de-instagrannie-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-instagrannie/de-instagrannie-800.webp)
+[![Affiche De Instagrannie]({{ site.baseurl }}/assets/images/voorstellingen/de-instagrannie/de-instagrannie-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-instagrannie/de-instagrannie-800.webp)
 
 ### Donderdag 17 April 2025, CCHA Hasselt, 20:00
 

@@ -1,0 +1,18 @@
+{%- if site.analytics.umami.url and site.analytics.umami.website_id -%}
+	<!-- Umami: counts visitors without cookies (self-hosted) -->
+	<script defer src="{{ site.analytics.umami.url }}/r.js"
+		data-website-id="{{ site.analytics.umami.website_id }}"
+		data-domains="www.reprisevzw.be,reprisevzw.be"
+		data-exclude-search="true"></script>
+	<script>
+		// Every link to the ticket shop counts as a "Koop tickets" click, with
+		// the page it was clicked on. The tracker sends it before it follows
+		// the link.
+		document.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('a[href*="tickets.roodfluweel.be"]').forEach(function (a) {
+				a.setAttribute('data-umami-event', 'Koop tickets');
+				a.setAttribute('data-umami-event-pagina', location.pathname);
+			});
+		});
+	</script>
+{%- endif -%}

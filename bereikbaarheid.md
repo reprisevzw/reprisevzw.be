@@ -2,6 +2,7 @@
 layout: article
 title: Bereikbaarheid
 permalink: /bereikbaarheid
+leaflet: true
 article_header:
   type: cover
   image:

@@ -11,7 +11,7 @@ toc: false
 
 <!--more-->
 
-[![de-schlagerij-header]({{ site.baseurl }}/assets/images/voorstellingen/de-schlagerij/de-schlagerij-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-schlagerij/de-schlagerij-800px.webp)
+[![Affiche De Schlagerij]({{ site.baseurl }}/assets/images/voorstellingen/de-schlagerij/de-schlagerij-800px.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-schlagerij/de-schlagerij-800px.webp)
 
 ### [Koop hier uw tickets!](https://tickets.roodfluweel.be/nl/reprise/Show/SeatSelection/8d2a57aa-11f1-44cd-bb6f-e91151559dc5)
 

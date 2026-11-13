@@ -12,7 +12,7 @@ toc: false
 
 <!--more-->
 
-[![de-padelburen-header]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-800.webp)
+[![Affiche De Padelburen]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-800.webp){:class="img-responsive" style="width: 60%;"}]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-800.webp)
 
 ### Maandag 8 April 2024, CCHA Hasselt, 20:00
 
@@ -31,6 +31,6 @@ Een actuele situatiekomedie met kleurrijke personages en hilarische toestanden. 
 
 ### Enkele sfeerbeelden
 
-![de-padelburen-1]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-zaal.webp){:class="img-responsive"}
+![Foto van de voorstelling De Padelburen]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-zaal.webp){:class="img-responsive"}
 
-![de-padelburen-1]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-groeten.webp){:class="img-responsive"}
+![Foto van de voorstelling De Padelburen]({{ site.baseurl }}/assets/images/voorstellingen/de-padelburen/de-padelburen-groeten.webp){:class="img-responsive"}

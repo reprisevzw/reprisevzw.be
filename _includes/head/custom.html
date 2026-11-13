@@ -2,8 +2,10 @@
 
 <meta name="facebook-domain-verification" content="78el32vxpvajwz00ztp07tkjwlsl57" />
 
+{%- if page.leaflet -%}
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+{%- endif %}
 <style>
   html, body {
     height: 100%;
@@ -12,8 +14,10 @@
   }
   #map {
     /* configure the size of the map */
-    width: 48rem;
+    width: 100%;
+    max-width: 48rem;
     height: 28rem;
+    max-height: 70vh;
   }
 </style>
 
