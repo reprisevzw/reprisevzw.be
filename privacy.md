@@ -32,6 +32,8 @@ Vragen over uw gegevens? Mail ons op <a class="link" href="mailto:{{ site.author
 
 Tickets verkopen we via Rood Fluweel (tickets.roodfluweel.be). De gegevens die u daar invult, verwerkt Rood Fluweel volgens zijn eigen privacybeleid.
 
+Als organisator van de voorstelling krijgen wij van Rood Fluweel uw naam, uw e-mailadres en wat u bestelde. Zo volgen we de verkoop van onze voorstellingen op. Bij elke bestelling krijgt ons team daarvan een kort bericht op de telefoon, via de meldingsdienst ntfy.sh. Die bewaart het bericht hoogstens 12 uur. Zelf bewaren wij uw gegevens niet: ze blijven bij Rood Fluweel.
+
 ## Als u ons een bericht stuurt
 
 Met het contactformulier vragen we uw naam, uw e-mailadres en uw bericht. Die gebruiken we alleen om u te antwoorden. Het bericht komt bij ons binnen per e-mail en wordt bewaard op onze server in de Europese Unie, tot {{ _p.bewaartermijn_contact }}.
@@ -52,6 +54,7 @@ U schrijft zich uit met de link onderaan elke nieuwsbrief. Dan wissen we uw gege
 
 - Bezoekers tellen, spam weren en de website veilig aanbieden doen we omdat we daar een **gerechtvaardigd belang** bij hebben, en zo dat uw privacy zo weinig mogelijk geraakt wordt.
 - Uw bericht beantwoorden en uw parkeeraanvraag doorgeven doen we omdat **u ons dat vraagt**.
+- De verkoop van onze voorstellingen opvolgen doen we in het kader van **de overeenkomst** die u sluit als u een ticket koopt.
 - De nieuwsbrief sturen we alleen met **uw toestemming**. U kan die altijd intrekken.
 
 ## Uw rechten
