@@ -1,5 +1,6 @@
 ---
 title: De Muizenval
+gezelschap: Loge 10 Theaterproducties
 datum: 2023-12-11 20:00
 affiche: /assets/images/voorstellingen/de-muizenval/de-muizenval-poster-xs.webp
 cast:
@@ -26,6 +27,6 @@ De Muizenval speelt zich af in het pension Monkswell Manor. Een aantal gasten is
 
 De spanning loopt vervolgens nog verder op als er een tweede slachtoffer valt. Het blijkt al snel dat alle aanwezigen een motief hebben voor de moord en ook dat ze in de gelegenheid waren om deze te plegen. Door de vreselijke sneeuwstorm kan niemand het hotel verlaten, ook de onbekende moordenaar niet. De gasten verdiepen zich in elkaars geheimen, maar de moordenaar verraadt zich niet.
 
-Meer over het verhaal kunnen we nog niet vertellen, dat zou de verrassing bederven en de traditie verbreken dat niemand die de show heeft gezien, vertelt wie de moordenaar is – wat inhoud dat er maar één manier is om er achter te komen…
+Meer over het verhaal kunnen we nog niet vertellen, dat zou de verrassing bederven en de traditie verbreken dat niemand die de show heeft gezien, vertelt wie de moordenaar is – wat inhoudt dat er maar één manier is om erachter te komen…
 
 …komen kijken!

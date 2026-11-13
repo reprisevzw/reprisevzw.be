@@ -98,7 +98,7 @@ function parkeerFormulier() {
     })
     .catch(function (error) {
       console.error('Error fetching events:', error);
-      resultMessage.textContent = 'Er is een fout opgetreden bij het ophalen van de evenementen. Probeer het later opnieuw.';
+      resultMessage.textContent = 'Er is een fout opgetreden bij het ophalen van de voorstellingen. Probeer het later opnieuw.';
     });
 
   form.addEventListener('submit', function (e) {
@@ -107,7 +107,7 @@ function parkeerFormulier() {
     var email = emailInput.value;
 
     if (!eventId || !email) {
-      resultMessage.textContent = 'Selecteer een evenement en vul uw e-mailadres in.';
+      resultMessage.textContent = 'Selecteer een voorstelling en vul uw e-mailadres in.';
       return;
     }
 
