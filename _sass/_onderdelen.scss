@@ -156,6 +156,7 @@
 }
 
 .affiche__lijst {
+  display: block;
   padding: 8px;
   background: $inkt;
   img {
@@ -163,6 +164,14 @@
     aspect-ratio: 800 / 1132;
     object-fit: cover;
   }
+}
+
+a.affiche__lijst img {
+  transition: opacity 0.15s;
+}
+
+a.affiche__lijst:hover img {
+  opacity: 0.88;
 }
 
 .affiche--groot {

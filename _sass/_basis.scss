@@ -119,6 +119,18 @@ a {
   }
 }
 
+// Titel die naar een voorstelling linkt: ziet eruit als de titel zelf
+.titellink {
+  color: inherit;
+  text-decoration: none;
+  text-underline-offset: 0.12em;
+  text-decoration-thickness: 0.06em;
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
 :focus-visible {
   outline: 3px solid $inkt;
   outline-offset: 3px;

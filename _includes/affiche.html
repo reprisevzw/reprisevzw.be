@@ -1,4 +1,8 @@
-{%- comment -%} Affiche met het datumlabel erboven. maat: groot, middel of klein. {%- endcomment -%}
+{%- comment -%}
+  Affiche met het datumlabel erboven. maat: groot, middel of klein.
+  link: adres waarnaar de affiche linkt (optioneel). De titel ernaast linkt
+  ook, dus de affiche zelf slaan we over voor toetsenbord en schermlezer.
+{%- endcomment -%}
 {%- assign _v = include.v -%}
 <figure class="affiche affiche--{{ include.maat | default: 'middel' }}">
   <p class="datumlabel">
@@ -9,7 +13,15 @@
     </span>
     <span class="sr">{% include datum.html d=_v.datum %}</span>
   </p>
+  {%- if include.link %}
+  <a class="affiche__lijst" href="{{ include.link | relative_url }}" tabindex="-1" aria-hidden="true">
+  {%- else %}
   <div class="affiche__lijst">
+  {%- endif %}
     <img src="{{ _v.affiche | relative_url }}" alt="Affiche {{ _v.title }}" width="800" height="1132"{% unless include.direct %} loading="lazy"{% endunless %} decoding="async">
+  {%- if include.link %}
+  </a>
+  {%- else %}
   </div>
+  {%- endif %}
 </figure>
