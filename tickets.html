@@ -21,10 +21,10 @@ layout: default
     <div class="ticketlijst__lijst">
       {%- for v in komende %}
       <article class="ticketrij" aria-labelledby="tk-{{ v.slug }}">
-        {% include affiche.html v=v maat="middel" %}
+        {% include affiche.html v=v maat="middel" link=v.url %}
         <div class="ticketrij__inhoud">
           <div class="ticketrij__info">
-            <h2 id="tk-{{ v.slug }}" class="ticketrij__titel">{{ v.title }}</h2>
+            <h2 id="tk-{{ v.slug }}" class="ticketrij__titel"><a class="titellink" href="{{ v.url | relative_url }}">{{ v.title }}</a></h2>
             {%- if v.gezelschap %}<p class="gedempt">{{ v.gezelschap }}</p>{% endif %}
             <p class="ticketrij__wanneer">{% include datum.html d=v.datum hoofdletter=true %}, {{ v.datum | date: "%H:%M" }}</p>
             <p>{{ _l.naam }}, {{ _l.straat }}, {{ _l.gemeente }}</p>

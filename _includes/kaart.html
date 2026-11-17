@@ -1,9 +1,9 @@
 {%- comment -%} Kaart van een komende voorstelling in een seizoensoverzicht. {%- endcomment -%}
 {%- assign _v = include.v -%}
 <article class="kaart" aria-labelledby="kaart-{{ _v.slug }}">
-  {% include affiche.html v=_v maat="middel" %}
+  {% include affiche.html v=_v maat="middel" link=_v.url %}
   <div class="kaart__info">
-    <h3 class="kaart__titel" id="kaart-{{ _v.slug }}">{{ _v.title }}</h3>
+    <h3 class="kaart__titel" id="kaart-{{ _v.slug }}"><a class="titellink" href="{{ _v.url | relative_url }}">{{ _v.title }}</a></h3>
     {%- if _v.gezelschap %}
     <p class="gedempt">{{ _v.gezelschap }}</p>
     {%- endif %}

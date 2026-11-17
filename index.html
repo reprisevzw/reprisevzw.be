@@ -9,10 +9,10 @@ redirect_from:
 <section class="spot" aria-labelledby="spot-titel">
   <div class="houder spot__raster">
     <p class="bovenlabel spot__label">Eerstvolgende voorstelling</p>
-    {% include affiche.html v=s maat="groot" direct=true %}
+    {% include affiche.html v=s maat="groot" direct=true link=s.url %}
     <div class="spot__tekst">
       <div class="spot__titels">
-        <h1 id="spot-titel" class="titel-xl">{{ s.title }}</h1>
+        <h1 id="spot-titel" class="titel-xl"><a class="titellink" href="{{ s.url | relative_url }}">{{ s.title }}</a></h1>
         {%- if s.gezelschap %}<p class="gedempt">{{ s.gezelschap }}</p>{% endif %}
       </div>
       {%- if s.kort %}
