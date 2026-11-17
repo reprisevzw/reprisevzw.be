@@ -1,6 +1,6 @@
 ---
 title: De Schlagerij
-gezelschap: Backstage Productions
+gezelschap: Backstage Producties
 datum: 2026-12-08 20:00
 affiche: /assets/images/voorstellingen/de-schlagerij/de-schlagerij-800px.webp
 kort: Een komedie die het publiek aan het lachen, gieren én smullen brengt.
@@ -21,7 +21,7 @@ cast:
   - naam: Dirk Van Vooren
     bekend_van: Piet Piraat
 ---
-'DE SCHLAGERIJ' (van Backstage Productions) is een komedie die het publiek aan het lachen, gieren én smullen brengt!
+'DE SCHLAGERIJ' (van Backstage Producties) is een komedie die het publiek aan het lachen, gieren én smullen brengt!
 
 Wanneer een Vlaamse slager zijn vrouw bedriegt met een Hollandse schlagerzangeres, heeft hij heel wat te verbergen voor het thuisfront en vooral voor de klanten. Niet veel later staat de zangeres voor zijn deur, dus moet onze beenhouwer de hulp inroepen van zijn trouwe huurder, in de kelder, om een préparé van goed gekruide leugens samen te stellen.
 
